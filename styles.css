@@ -669,7 +669,7 @@ header h1::after {
   flex-wrap: wrap;
 }
 
-#name, #email, #message, #submit {
+#name, #email, #subject, #message, #submit {
   padding: 1em;
   margin-bottom: 1em;
   color: var(--gray);
@@ -727,7 +727,7 @@ header h1::after {
     max-width: calc(51% - 1em);
   }
 
-  #name, #email, #message {
+  #name, #email, #subject, #message {
     width: 100%;
   }
 
