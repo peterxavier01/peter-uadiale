@@ -742,7 +742,7 @@ header h1::after {
 /************** Footer ****************/
 footer {
   padding: 1em 0;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/works-12.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../peter-uadiale/images/works-12.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
