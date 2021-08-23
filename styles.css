@@ -95,6 +95,8 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(../peter-uadiale/images/home-5.jpg);
   background-size: cover;
   background-attachment: fixed;
+  object-fit:cover;
+  object-position: center;
   margin-bottom: 6em;
 }
 
