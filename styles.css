@@ -312,7 +312,7 @@ header h1::after {
 }
 
 .about-content p:nth-child(2) {
-  font-size: 1.2rem;
+  font-size: 1.0625rem; 
 }
 
 .my-skills {
@@ -461,7 +461,7 @@ header h1::after {
 .service p {
   padding-bottom: 1em;
   line-height: 1.8em;
-  font-size: 1.2rem;
+  font-size: 1.0625rem;
   text-align: center;
   color: var(--gray);
 }
@@ -783,5 +783,5 @@ footer span {
 .copyright {
   text-transform: capitalize;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.0625rem;
 }
