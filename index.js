@@ -1,9 +1,7 @@
 //Menu Toggler
 const menu = document.getElementById('hamburger');
 const links = document.getElementById('navLinks');
-const btn = document.querySelectorAll('.header-btn');
-const navOpen = document.querySelector('nav ul.open');
-const link = document.querySelector('nav a');
+const navLinks = document.querySelectorAll('.link');
 
 function menuToggle() {
   links.classList.toggle('open');
@@ -18,6 +16,13 @@ $('nav ul a').on('click', function(){
   $(this).addClass('active');
 });
 
+
+//Close nav on click
+navLinks.forEach(navLink => {
+  navLink.addEventListener('click', () => {
+    links.classList.remove('open');
+  });
+});
 
 
 // Navbar scroll
