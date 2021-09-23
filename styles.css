@@ -669,6 +669,7 @@ header h1::after {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  max-width: 400px;
 }
 
 #name, #email, #subject, #message, #submit {
@@ -723,6 +724,7 @@ header h1::after {
   #form {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 100%;
   }
   
   #name, #email {
