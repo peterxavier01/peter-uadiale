@@ -673,6 +673,7 @@ header h1::after {
 }
 
 #name, #email, #subject, #message, #submit {
+  width: 100%;
   padding: 1em;
   margin-bottom: 1em;
   color: var(--gray);
