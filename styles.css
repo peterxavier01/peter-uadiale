@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Lora', sans-serif;
+}
+
 nav {
   padding: 1em 1.5em;
   position: fixed;
@@ -86,7 +90,7 @@ nav a {
   text-decoration: none;
   color: #fff;
   font-size: 1.5rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 header {
@@ -94,8 +98,9 @@ header {
   min-height: 500px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(../peter-uadiale/images/home.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100%;
   margin-bottom: 6em;
 }
 
@@ -664,9 +669,11 @@ header h1::after {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-#name, #email, #message, #submit {
+#name, #email, #subject, #message, #submit {
+  width: 100%;
   padding: 1em;
   margin-bottom: 1em;
   color: var(--gray);
@@ -718,13 +725,14 @@ header h1::after {
   #form {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 100%;
   }
   
   #name, #email {
     max-width: calc(51% - 1em);
   }
 
-  #name, #email, #message {
+  #name, #email, #subject, #message {
     width: 100%;
   }
 
@@ -753,6 +761,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 .9em;
 }
 
 footer .logo {
