@@ -11,14 +11,14 @@ Showcasing my journey in the web development sphere.
 - 👨‍🏭 Fun fact: I love to paint, eat and sleep.
 
 ### Connect with me:
-[![website](./assets/twitter-light.svg)](https://twitter.com/peter_uadiale#gh-light-mode-only)
-[![website](./assets/twitter-dark.svg)](https://twitter.com/peter_uadiale#gh-dark-mode-only)
+[![website](./images/twitter-light.svg)](https://twitter.com/peter_uadiale#gh-light-mode-only)
+[![website](./images/twitter-dark.svg)](https://twitter.com/peter_uadiale#gh-dark-mode-only)
 &nbsp;&nbsp;
-[![website](./assets/linkedin-light.svg)](https://www.linkedin.com/in/peter-uadiale-69541a19a/#gh-light-mode-only)
-[![website](./assets/linkedin-dark.svg)](https://www.linkedin.com/in/peter-uadiale-69541a19a/#gh-dark-mode-only)
+[![website](./images/linkedin-light.svg)](https://www.linkedin.com/in/peter-uadiale-69541a19a/#gh-light-mode-only)
+[![website](./images/linkedin-dark.svg)](https://www.linkedin.com/in/peter-uadiale-69541a19a/#gh-dark-mode-only)
 &nbsp;&nbsp;
-[![website](./assets/instagram-light.svg)](https://www.instagram.com/peter_xavier__/#gh-light-mode-only)
-[![website](./assets/instagram-dark.svg)](https://www.instagram.com/peter_xavier__/#gh-dark-mode-only)
+[![website](./images/instagram-light.svg)](https://www.instagram.com/peter_xavier__/#gh-light-mode-only)
+[![website](./images/instagram-dark.svg)](https://www.instagram.com/peter_xavier__/#gh-dark-mode-only)
 <br />
 
 ### Languages and Tools:
