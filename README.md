@@ -3,6 +3,11 @@ Showcasing my journey in the web development sphere.
 <br>
 <br>
 
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/peterxavier01/peter-uadiale?style=for-the-badge)
+![AUR last modified](https://img.shields.io/aur/last-modified/google-chrome?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/peterxavier01/peter-uadiale?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/peterxavier01/peter-uadiale?style=for-the-badge)
+
 ## I'm a Developer, Designer and Freelancer!!
 
 - 👯 I’m looking to collaborate with other content creators.
