@@ -98,3 +98,30 @@ window.onscroll = () => {
     }
   });
 };
+
+//Adding event listeners to works-menu
+let filterTabContainer = document.querySelector("#works-menu");
+let works = document.querySelectorAll(".work");
+
+filterTabContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("filter-item")) {
+    
+    // deactivate existing active 'filter-item'
+    filterTabContainer.querySelector(".active").classList.remove("active");
+
+    // activate new 'filter-item'
+    e.target.classList.add("active");
+
+    const filterValue = e.target.getAttribute("data-filter");
+
+    works.forEach((work) => {
+      if (work.classList.contains(filterValue) || filterValue === "all") {
+        work.classList.remove("hide");
+        work.classList.add("show");
+      } else {
+        work.classList.remove("show");
+        work.classList.add("hide");
+      }
+    });
+  }
+});

@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primary-clr: #09EBEB;
+  --primary-clr: #09ebeb;
   --gray: #555;
   --white: #fff;
 }
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Lora', sans-serif;
+  font-family: "Lora", sans-serif;
 }
 
 nav {
@@ -33,7 +33,7 @@ nav span {
 
 .nav-scrolled {
   background-color: #fff;
-  padding:  1em 1.5em;
+  padding: 1em 1.5em;
   z-index: 999;
 }
 
@@ -72,7 +72,7 @@ nav ul {
 nav ul.open {
   display: block;
   left: 0;
-  transition: all .5s;
+  transition: all 0.5s;
   z-index: 1;
 }
 
@@ -80,7 +80,7 @@ nav ul.open a {
   color: var(--gray);
 }
 
-nav ul.open a.active, 
+nav ul.open a.active,
 nav ul.open a:hover {
   color: var(--primary-clr);
 }
@@ -101,7 +101,8 @@ nav a {
 header {
   height: 100vh;
   min-height: 500px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(../peter-uadiale/images/home.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../peter-uadiale/images/home.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -121,7 +122,7 @@ header {
   color: #fff;
   text-align: center;
   top: 40%;
-  padding: 0 .4em;
+  padding: 0 0.4em;
   margin-bottom: 1.5em;
 }
 
@@ -141,7 +142,7 @@ header h1::after {
 @keyframes headerAnim {
   50% {
     content: "A Designer";
-  } 
+  }
   100% {
     content: "A Marketer";
   }
@@ -163,7 +164,7 @@ header h1::after {
   border: 1px solid var(--primary-clr);
   border-radius: 10px;
   padding: 1em;
-  margin: .7em 0;
+  margin: 0.7em 0;
   text-transform: uppercase;
   font-weight: normal;
 }
@@ -171,7 +172,7 @@ header h1::after {
 .header-btn a:hover {
   background-color: var(--primary-clr);
   color: #fff;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
 
 .btn-2 {
@@ -179,8 +180,7 @@ header h1::after {
   color: #fff !important;
 }
 
-@media screen and (min-width: 768px) { 
-
+@media screen and (min-width: 768px) {
   .logo {
     font-size: 2rem;
   }
@@ -191,23 +191,22 @@ header h1::after {
   }
 
   .nav-scrolled {
-    padding:  0 1.5em;
+    padding: 0 1.5em;
   }
 
   .nav-scrolled .link {
     color: var(--gray);
   }
-  
-  
+
   .nav-scrolled .link:hover {
     color: var(--primary-clr);
   }
-  
+
   .nav-scrolled .active {
     color: var(--primary-clr);
   }
-  
-   nav ul {
+
+  nav ul {
     left: 0;
     position: relative;
     top: 0;
@@ -235,13 +234,8 @@ header h1::after {
 
   nav ul a:hover {
     color: var(--primary-clr);
-    transition: ease-out .5s;
+    transition: ease-out 0.5s;
   }
-
-  .hide {
-    display: none;
-  }
-
 
   .navbar {
     display: flex;
@@ -252,11 +246,11 @@ header h1::after {
   .header-body {
     top: 40%;
   }
-  
+
   header p {
     font-size: 1.5rem;
   }
-  
+
   header h1 {
     font-size: 4rem;
   }
@@ -265,12 +259,11 @@ header h1::after {
     flex-direction: row;
     justify-content: center;
   }
- 
+
   .header-btn a {
-    margin: 0 .85em;
+    margin: 0 0.85em;
   }
 }
-
 
 /************** About ***************/
 #about {
@@ -292,7 +285,7 @@ header h1::after {
   font-weight: 700;
   font-size: 1.3rem;
   text-align: left;
-  margin-bottom: .6em;
+  margin-bottom: 0.6em;
 }
 
 #about .col-1 .about-img {
@@ -322,7 +315,7 @@ header h1::after {
 }
 
 .about-content p:nth-child(2) {
-  font-size: 1.0625rem; 
+  font-size: 1.0625rem;
 }
 
 .my-skills {
@@ -333,25 +326,25 @@ header h1::after {
 
 .skill {
   width: 100%;
-  margin: .9375em 0;
-} 
+  margin: 0.9375em 0;
+}
 
 .skill-info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .skill-bar {
   position: relative;
   background-color: #ddd;
-  height: .1875em;
+  height: 0.1875em;
 }
 
 .skill-bar::after {
   content: "";
   position: absolute;
-  height: .375em;
+  height: 0.375em;
   background-color: var(--primary-clr);
   bottom: 0;
 }
@@ -380,7 +373,12 @@ header h1::after {
   width: 82%;
 }
 
-.html:after, .css::after, .js::after, .xd::after, .sass::after, .jquery::after {
+.html:after,
+.css::after,
+.js::after,
+.xd::after,
+.sass::after,
+.jquery::after {
   animation: skillAnim 5s linear forwards;
 }
 
@@ -394,6 +392,9 @@ header h1::after {
 }
 
 @media screen and (min-width: 768px) {
+  #about {
+    padding: 0 3em;
+  }
 
   #about h1 {
     margin-bottom: 0;
@@ -414,7 +415,7 @@ header h1::after {
 
   .about-content {
     width: 60%;
-   justify-content: center;
+    justify-content: center;
   }
 
   .skill {
@@ -425,8 +426,6 @@ header h1::after {
     font-size: 1rem;
   }
 }
-
-
 
 /************** Services ***************/
 #services {
@@ -458,14 +457,14 @@ header h1::after {
 
 .service .bi {
   font-size: 2rem;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   color: var(--gray);
   cursor: pointer;
 }
 
 .service .bi:hover {
   color: var(--primary-clr);
-  transition: color .5s ease-in;
+  transition: color 0.5s ease-in;
 }
 
 .service p {
@@ -479,19 +478,23 @@ header h1::after {
 .service span {
   font-weight: 700;
   font-size: 1.22rem;
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
   color: var(--gray);
 }
 
 @media screen and (min-width: 768px) {
+  #services {
+    padding: 0 3em;
+  }
+
   #services h1 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
 
   .serv-img {
     width: 30%;
   }
-  
+
   .service-container {
     display: flex;
     justify-content: space-between;
@@ -499,7 +502,8 @@ header h1::after {
   }
 
   .service {
-    width: calc(33% - 1em);
+    padding: 1em 0;
+    width: calc(50% - 1em);
     padding: 1em;
   }
 
@@ -509,9 +513,18 @@ header h1::after {
 
   .service span {
     font-size: 1.6rem;
-  } 
+  }
+
+  .service p {
+    font-size: 1.2rem;
+  }
 }
 
+@media screen and (min-width: 1024px) {
+  .service {
+    width: calc(33% - 1em);
+  }
+}
 
 /*************** Work ***************/
 #work {
@@ -533,11 +546,56 @@ header h1::after {
   width: 100%;
 }
 
+#works-menu {
+  display: flex;
+  justify-content: center;
+  margin: 0 1em;
+  margin-bottom: 0.8em;
+}
+
+#works-menu li {
+  list-style: none;
+  margin: 0 0.8em;
+  border: 1px solid #09ebeb;
+  color: #09ebeb;
+  border-radius: 100px;
+  padding: 0.5em 1em;
+}
+
+#works-menu .active {
+  background-color: #09ebeb;
+  color: var(--white);
+}
+
+#works-menu li:hover {
+  background-color: #09ebeb;
+  color: var(--white);
+  cursor: pointer;
+  transition: 200ms ease-in;
+}
+
+.work.show {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.work.hide {
+  display: none;
+}
+
 .work {
   position: relative;
   width: 100%;
   overflow: hidden;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .work::before {
@@ -547,7 +605,7 @@ header h1::after {
   background-color: #57dffdcc;
   position: absolute;
   opacity: 0;
-  transition: .4s linear;
+  transition: 0.4s linear;
   transform: scale(0);
   z-index: 1;
 }
@@ -585,27 +643,33 @@ header h1::after {
   object-fit: cover;
   object-position: top;
   border-radius: 6px;
-  transition: .4s linear;
+  transition: 0.4s linear;
 }
 
-
 @media screen and (min-width: 768px) {
+  #work {
+    padding: 0 3em;
+  }
+
   #work h1 {
     font-size: 2.5rem;
   }
 
   .work-img {
     width: 30%;
-  }  
-
-  .my-works {
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1em;
   }
 
+  .my-works {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+  }
 }
 
-
+@media screen and (min-width: 1024px) {
+  .my-works {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 /************** Contact **************/
 #contact {
@@ -644,7 +708,7 @@ header h1::after {
   color: var(--gray);
   font-size: 1.05rem;
   cursor: pointer;
-  transition: background-color .3s ease-in;
+  transition: background-color 0.3s ease-in;
 }
 
 .contact-info .item:hover {
@@ -677,7 +741,11 @@ header h1::after {
   justify-content: center;
 }
 
-#name, #email, #subject, #message, #submit {
+#name,
+#email,
+#subject,
+#message,
+#submit {
   width: 100%;
   padding: 1em;
   margin-bottom: 1em;
@@ -708,7 +776,7 @@ header h1::after {
   color: var(--primary-clr);
   margin-right: auto;
   font-weight: 600;
-  transition: background-color .3s ease-in;
+  transition: background-color 0.3s ease-in;
   cursor: pointer;
 }
 
@@ -717,8 +785,11 @@ header h1::after {
   background-color: var(--primary-clr);
 }
 
-
 @media screen and (min-width: 768px) {
+  #contact {
+    padding: 0 3em;
+  }
+
   #contact h1 {
     font-size: 2.5rem;
   }
@@ -727,17 +798,26 @@ header h1::after {
     width: 30%;
   }
 
+  #name,
+  #email {
+    width: 50% !important;
+  }
+
   #form {
     flex-direction: row;
     justify-content: space-between;
     max-width: 100%;
   }
-  
-  #name, #email {
+
+  #name,
+  #email {
     max-width: calc(51% - 1em);
   }
 
-  #name, #email, #subject, #message {
+  #name,
+  #email,
+  #subject,
+  #message {
     width: 100%;
   }
 
@@ -751,12 +831,11 @@ header h1::after {
   }
 }
 
-
-
 /************** Footer ****************/
 footer {
   padding: 1em 0;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../peter-uadiale/images/works-12.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../peter-uadiale/images/works-12.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -766,11 +845,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 .9em;
+  padding: 0 0.9em;
 }
 
 footer .logo {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .social-icons {
@@ -782,7 +861,7 @@ footer .logo {
   color: #fff;
   font-size: 1.3rem;
   padding-right: 1em;
-  transition: color .3s ease-in;
+  transition: color 0.3s ease-in;
 }
 
 .social-icons a:hover {
