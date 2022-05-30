@@ -1,258 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-  <link rel="stylesheet" type="text/css" href="/peter-uadiale/styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="/peter-uadiale/images/favicon.ico">
-  <title>Peter Uadiale | Portfolio</title>
-</head>
-<body>
-  
-  <header id="header"> 
-    <div class="header-body">
-      <p>Hi, I'm Peter</p>
-      <h1>I'm </h1>
-    </div>
-    
-    <div class="header-btn">
-      <a href="#work" class="btn-1">Works</a>
-      <a href="#contact" class="btn-2">Hire me</a>
-    </div>
-    
-    <nav>
-      <div class="navbar">
-        <a href="#" class="logo">Peter<span>.</span></a>
-        <button id="hamburger">&#9776;</button>
-        <ul id="navLinks">
-          <li><a href="#header" class="active link">Home</a></li>
-          <li><a href="#about" class="link">About</a></li>
-          <li><a href="#services" class="link">Services</a></li>
-          <li><a href="#work" class="link">Work</a></li>
-          <li><a href="#contact" class="link">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  
-  <main>
-    <section id="about">
-      <h1 class="section-title">About <span>Me</span></h1>
-      <div class="col-1">
-        <div class="about-img">
-          <img src="images/about.svg" alt="about-img">
-        </div>
-        <div class="about-content">
-          <p class="my-name">Hi, I'm Peter Uadiale<span>.</span></p>
-          <p>I am a front-end developer based in Nigeria. I started my journey in 2020 shortly after the Covid-19 pandemic shook the world (2 years plus). 
-          </p><br>
-          <p>I love reading books; I have read all the books by Dan Brown (Dare I say he has the best fictional books I have read so far). I also love seeing movies, Animes (my best would be Tokyo Ghoul so far) and sleeping😁.
-          </p><br>
-          <p>The tools that I use for front-end development include React, BootStrap, Sass, JQuery, Vanilla JavaScript and Adobe XD, for now.
-          </p><br>
-          <p>I love to learn new things and experience new adventures. I am very inquisitive and open-minded. I also possess good listening skills which allow me to provide the best results and experiences to my employers and users. 
-          </p>
-        </div>
-      </div>
-      
-      <div class="my-skills">
-        <div class="skill">
-          <div class="skill-info">
-            <span>HTML</span>
-            <span>92%</span>
-          </div>
-          <div class="skill-bar html fill" data-fill="skillAnim 5s "></div>
-        </div>
-        
-        <div class="skill">
-          <div class="skill-info">
-            <span>CSS</span>
-            <span>80%</span>
-          </div>
-          <div class="skill-bar css fill" data-fill="skillAnim 5s "></div>
-        </div>
-        
-        <div class="skill">
-          <div class="skill-info">
-            <span>JavaScript</span>
-            <span>79%</span>
-          </div>
-          <div class="skill-bar js fill" data-fill="skillAnim 5s "></div>
-        </div>
-        
-        <div class="skill">
-          <div class="skill-info">
-            <span>Adobe XD</span>
-            <span>60%</span>
-          </div>
-          <div class="skill-bar xd fill" data-fill="skillAnim 5s "></div>
-        </div>
-        
-        <div class="skill">
-          <div class="skill-info">
-            <span>Sass</span>
-            <span>80%</span>
-          </div>
-          <div class="skill-bar sass fill" data-fill="skillAnim 5s "></div>
-        </div>
-        
-        <div class="skill">
-          <div class="skill-info">
-            <span>Jquery</span>
-            <span>82%</span>
-          </div>
-          <div class="skill-bar jquery fill" data-fill="skillAnim 5s "></div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="services">
-      <h1 class="section-title"><span>My</span> Services</h1>
-      <div class="serv-img">
-        <img src="images/services.svg" alt="an illustration">
-      </div>
-      
-      <div class="service-container">
-        <div class="service">
-          <i class="bi bi-gear-fill"></i>
-          <span>Website Development</span>
-          <p>I develop fully responsive websites on all device screens with great UI/UX.</p>
-        </div>
-        <div class="service">
-          <i class="bi bi-piggy-bank-fill"></i>
-          <span>Template Design</span>
-          <p>I design beautiful website templates for both desktop and mobile screen resolutions.</p>
-        </div>
-        <div class="service">
-          <i class="bi bi-unlock-fill"></i>
-          <span>Content Management Systems</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eveniet dolorem.</p>
-        </div>
-        <div class="service">
-          <i class="bi bi-unlock-fill"></i>
-          <span>Search Engine Optimization</span>
-          <p>I implement the best and latest SEO practices to ensure that your websites are efficiently optimized for speed, performance and search engine results.</p>
-        </div>
-      </div>
-    </section>
-    
-    <section id="work">
-      <h1 class="section-title">My <span>Works</span></h1>
-      <div class="work-img">
-        <img src="images/works.svg" alt="an illustration">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="/peter-uadiale/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/peter-uadiale/images/favicon.ico"
+    />
+    <title>Peter Uadiale | Portfolio</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="header-body">
+        <p>Hi, I'm Peter</p>
+        <h1>I'm</h1>
       </div>
 
-      <ul id="works-menu">
-        <li class="active allTab filter-item" data-filter="all">All</li>
-        <li class="webTab filter-item" data-filter="website">Websites</li>
-        <li class="othersTab filter-item" data-filter="others">Others</li>
-      </ul>
-      
-      <div class="my-works">
-        <a href="images/works-12.png" class="work others">
-          <img src="images/works-12.png" alt="portfolio">
-          <div class="work-info">
-            <h3>Tic Tac Toe</h3>
-            <div>React, BootStrap</div>
-          </div>
-        </a>
-        
-        <a href="images/works-10.jpg" class="work others">
-          <img src="images/works-10.jpg" alt="portfolio">
-          <div class="work-info">
-            <h3>To-Do List</h3>
-            <div>HTML, CSS & Vanilla JS</div>
-          </div>
-        </a>
-        
-        <a href="https://odb-lyrics.netlify.app/" target="_blank" class="work website">
-          <img src="images/works-13.png" alt="portfolio">
-          <div class="work-info">
-            <h3>Lyrics App</h3>
-            <div>HTML, CSS & Vanilla JS</div>
-          </div>
-        </a>
-        
-        <a href="images/works-7.png" class="work others">
-          <img src="images/works-7.png" alt="portfolio">
-          <div class="work-info">
-            <h3>Exchange Rate App</h3>
-            <div>HTML, CSS & Vanilla JS</div>
-          </div>
-        </a>
-        
-        <a href="images/works-8.png" class="work website">
-          <img src="images/works-8.png" alt="portfolio">
-          <div class="work-info">
-            <h3>Technical Docs Website</h3>
-            <div>HTML & Sass</div>
-          </div>
-        </a>
-        
-        <a href="images/works-11.jpg" class="work website">
-          <img src="images/works-11.jpg" alt="portfolio">
-          <div class="work-info">
-            <h3>Product Landing Page</h3>
-            <div>HTML, CSS & Vanilla JS</div>
-          </div>
-        </a>
+      <div class="header-btn">
+        <a href="#work" class="btn-1">Works</a>
+        <a href="#contact" class="btn-2">Hire me</a>
       </div>
-    </section>
-    
-    <section id="contact">
-      <h1 class="section-title">Contact <span>Me</span></h1>
-      <div class="contact-img">
-        <img src="images/contact.svg" alt="an illustration">
-      </div>
-      
-      <div class="contact-info">
-        <div class="item">
-          <i class="bi bi-envelope-fill"></i>
-          <p>peteuadiale1@gmail.com</p>
+
+      <nav>
+        <div class="navbar">
+          <a href="#" class="logo">Peter<span>.</span></a>
+          <button id="hamburger">&#9776;</button>
+          <ul id="navLinks">
+            <li><a href="#header" class="active link">Home</a></li>
+            <li><a href="#about" class="link">About</a></li>
+            <li><a href="#services" class="link">Services</a></li>
+            <li><a href="#work" class="link">Work</a></li>
+            <li><a href="#contact" class="link">Contact</a></li>
+          </ul>
         </div>
-        <div class="item">
-          <i class="bi bi-telephone-fill"></i>
-          <p>+234 90 7474 4346</p>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h1 class="section-title">About <span>Me</span></h1>
+        <div class="col-1">
+          <div class="about-img">
+            <img src="images/about.svg" alt="about-img" />
+          </div>
+          <div class="about-content">
+            <p class="my-name">Hi, I'm Peter Uadiale<span>.</span></p>
+            <p>
+              I am a front-end developer based in Nigeria. I have a web
+              development experience of two plus (2+) years.
+            </p>
+            <p>
+              I love reading good, knowledgeable and books. I also love seeing
+              movies, animes and sleeping; and of course programming.
+            </p>
+            <p>
+              The tools that I use for front-end development include React,
+              BootStrap, Sass, JQuery, Vanilla JavaScript and Adobe XD, for now.
+            </p>
+            <p>
+              I have a passion for learning new things and experiencing new
+              adventures. I am very inquisitive and open-minded. I strive to be
+              a good listener to be able to provide the best results and
+              experiences for my employers and users of my works. Also, I
+              possess soft skills that enable me to function well in any team.
+            </p>
+          </div>
         </div>
-        <div class="item">
-          <i class="bi bi-geo-alt-fill"></i>
-          <p>Lagos, Nigeria</p>
+
+        <div class="my-skills">
+          <div class="skill">
+            <div class="skill-info">
+              <span>HTML</span>
+              <span>92%</span>
+            </div>
+            <div class="skill-bar html fill" data-fill="skillAnim 5s "></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-info">
+              <span>CSS</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar css fill" data-fill="skillAnim 5s "></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-info">
+              <span>JavaScript</span>
+              <span>79%</span>
+            </div>
+            <div class="skill-bar js fill" data-fill="skillAnim 5s "></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-info">
+              <span>Adobe XD</span>
+              <span>60%</span>
+            </div>
+            <div class="skill-bar xd fill" data-fill="skillAnim 5s "></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-info">
+              <span>Sass</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar sass fill" data-fill="skillAnim 5s "></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-info">
+              <span>Jquery</span>
+              <span>82%</span>
+            </div>
+            <div class="skill-bar jquery fill" data-fill="skillAnim 5s "></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <h1 class="section-title"><span>My</span> Services</h1>
+        <div class="serv-img">
+          <img src="images/services.svg" alt="an illustration" />
+        </div>
+
+        <div class="service-container">
+          <div class="service">
+            <i class="bi bi-gear-fill"></i>
+            <span>Website Development</span>
+            <p>
+              I develop fully responsive websites on all device screens with
+              great UI/UX.
+            </p>
+          </div>
+          <div class="service">
+            <i class="bi bi-piggy-bank-fill"></i>
+            <span>Template Design</span>
+            <p>
+              I design beautiful website templates for both desktop and mobile
+              screen resolutions.
+            </p>
+          </div>
+          <div class="service">
+            <i class="bi bi-unlock-fill"></i>
+            <span>Content Management Systems</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              eveniet dolorem.
+            </p>
+          </div>
+          <div class="service">
+            <i class="bi bi-unlock-fill"></i>
+            <span>Search Engine Optimization</span>
+            <p>
+              I implement the best and latest SEO practices to ensure that your
+              websites are efficiently optimized for speed, performance and
+              search engine results.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="work">
+        <h1 class="section-title">My <span>Works</span></h1>
+        <div class="work-img">
+          <img src="images/works.svg" alt="an illustration" />
+        </div>
+
+        <ul id="works-menu">
+          <li class="active allTab filter-item" data-filter="all">All</li>
+          <li class="webTab filter-item" data-filter="website">Websites</li>
+          <li class="othersTab filter-item" data-filter="others">Others</li>
+        </ul>
+
+        <div class="my-works">
+          <a href="images/works-12.png" class="work others">
+            <img src="images/works-12.png" alt="portfolio" />
+            <div class="work-info">
+              <h3>Tic Tac Toe</h3>
+              <div>React, BootStrap</div>
+            </div>
+          </a>
+
+          <a href="images/works-10.jpg" class="work others">
+            <img src="images/works-10.jpg" alt="portfolio" />
+            <div class="work-info">
+              <h3>To-Do List</h3>
+              <div>HTML, CSS & Vanilla JS</div>
+            </div>
+          </a>
+
+          <a
+            href="https://odb-lyrics.netlify.app/"
+            target="_blank"
+            class="work website"
+          >
+            <img src="images/works-13.png" alt="portfolio" />
+            <div class="work-info">
+              <h3>Lyrics App</h3>
+              <div>HTML, CSS & Vanilla JS</div>
+            </div>
+          </a>
+
+          <a href="images/works-7.png" class="work others">
+            <img src="images/works-7.png" alt="portfolio" />
+            <div class="work-info">
+              <h3>Exchange Rate App</h3>
+              <div>HTML, CSS & Vanilla JS</div>
+            </div>
+          </a>
+
+          <a href="images/works-8.png" class="work website">
+            <img src="images/works-8.png" alt="portfolio" />
+            <div class="work-info">
+              <h3>Technical Docs Website</h3>
+              <div>HTML & Sass</div>
+            </div>
+          </a>
+
+          <a href="images/works-11.jpg" class="work website">
+            <img src="images/works-11.jpg" alt="portfolio" />
+            <div class="work-info">
+              <h3>Product Landing Page</h3>
+              <div>HTML, CSS & Vanilla JS</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1 class="section-title">Contact <span>Me</span></h1>
+        <div class="contact-img">
+          <img src="images/contact.svg" alt="an illustration" />
+        </div>
+
+        <div class="contact-info">
+          <div class="item">
+            <i class="bi bi-envelope-fill"></i>
+            <p>peteuadiale1@gmail.com</p>
+          </div>
+          <div class="item">
+            <i class="bi bi-telephone-fill"></i>
+            <p>+234 90 7474 4346</p>
+          </div>
+          <div class="item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <p>Lagos, Nigeria</p>
+          </div>
+        </div>
+
+        <form id="form">
+          <label for="name"></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name"
+            required
+          />
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email"
+            required
+          />
+          <label for="subject"></label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Subject"
+          />
+          <label for="message"></label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <input type="submit" value="submit" id="submit" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="logo">Peter<span>.</span></div>
+        <div class="social-icons">
+          <a href="#" class="bi bi-facebook"></a>
+          <a href="#" class="bi bi-instagram"></a>
+          <a href="#" class="bi bi-twitter"></a>
+          <a href="#" class="bi bi-linkedin"></a>
+        </div>
+        <div class="copyright">
+          &copy 2021 Peter Uadiale | all rights reserved
         </div>
       </div>
-      
-      <form id="form">
-        <label for="name"></label>
-        <input type="text" name="name" id="name" placeholder="Your name" required>
-        <label for="email"></label>
-        <input type="email" name="email" id="email" placeholder="Your email" required>
-        <label for="subject"></label>
-        <input type="text" name="subject" id="subject" placeholder="Subject">
-        <label for="message"></label>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-        <input type="submit" value="submit" id="submit">
-      </form>
-    </section>
-  </main>
-  
-  <footer>
-    <div class="footer-container">
-      <div class="logo">Peter<span>.</span></div>
-      <div class="social-icons">
-        <a href="#" class="bi bi-facebook"></a>
-        <a href="#" class="bi bi-instagram"></a>
-        <a href="#" class="bi bi-twitter"></a>
-        <a href="#" class="bi bi-linkedin"></a>
-      </div>
-      <div class="copyright">&copy 2021 Peter Uadiale | all rights reserved</div>
-    </div>
-  </footer>
-  
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="magnific-popup/jquery.magnific-popup.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="/peter-uadiale/index.js"></script>
-</body>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="/peter-uadiale/index.js"></script>
+  </body>
 </html>
