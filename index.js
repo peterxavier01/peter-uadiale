@@ -48,7 +48,6 @@ const navObserver = new IntersectionObserver((entries, navObserver) => {
 navObserver.observe(header);
 
 
-
 //Skillbar Animation
 const fillItems = document.querySelectorAll('.fill');
 
@@ -71,15 +70,6 @@ const aboutObserver = new IntersectionObserver((entries, aboutObserver) => {
 fillItems.forEach(item => {
   aboutObserver.observe(item);
 });
-
-//Magnific Popup
-$(function() {
-$(".my-works").magnificPopup({
-  delegate: 'a',
-  type: 'image',
-  gallery:{enabled:true}
- });
-}); 
 
 //Change active section on scroll
 window.onscroll = () => {
@@ -124,4 +114,17 @@ filterTabContainer.addEventListener("click", (e) => {
       }
     });
   }
+});
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if(this.scrollY > 20){
+      $(".goToTop").fadeIn();
+    }
+    else{
+      $(".goToTop").fadeOut();
+    }
+  });
+
+  $(".goToTop").click(function(){scroll(0,0)});
 });
