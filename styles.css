@@ -918,3 +918,19 @@ footer span {
   color: #fff;
   font-size: 1.0625rem;
 }
+
+.goToTop{
+  position: fixed;
+  z-index: 999;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-clr);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--white);
+  outline: none;
+  display: none;
+}
