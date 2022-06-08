@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primary-clr: #09ebeb;
+  --primary-clr: #00B2B3;
   --gray: #555;
   --white: #fff;
 }
@@ -437,8 +437,13 @@ header h1::after {
 
 /************** Services ***************/
 #services {
-  padding: 0 1em;
+  padding: 2em 1em;
   margin-bottom: 6em;
+  background-color: hsl(180, 20%, 23%);
+}
+
+#services h1 {
+  color: var(--white);
 }
 
 #services h1 span {
@@ -462,23 +467,32 @@ header h1::after {
   align-items: center;
   border-radius: 8px;
   margin-bottom: 1em;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border: 1px solid var(--primary-clr);
   padding: 0.3em;
+}
+
+.service:hover {
+  transition: .3s ease-in;
+  background-color: var(--primary-clr);
+}
+
+.service:hover .bi:hover {
+  color: var(--white);
+}
+
+.service:hover p {
+  color: var(--white);
 }
 
 .service .bi {
   font-size: 2rem;
   margin-bottom: 0.5em;
-  color: var(--gray);
-  cursor: pointer;
 }
 
-.service .bi:hover {
-  color: var(--primary-clr);
-  transition: color 0.5s ease-in;
+.service p,
+.service span,
+.service .bi {
+  color: var(--white);
 }
 
 .service p {
@@ -486,19 +500,17 @@ header h1::after {
   line-height: 1.8em;
   font-size: 1.0625rem;
   text-align: center;
-  color: var(--gray);
 }
 
 .service span {
   font-weight: 700;
   font-size: 1.22rem;
   margin-bottom: 0.3em;
-  color: var(--gray);
 }
 
 @media screen and (min-width: 768px) {
   #services {
-    padding: 0 3em;
+    padding: 2em 3em;
   }
 
   #services h1 {
@@ -570,19 +582,19 @@ header h1::after {
 #works-menu li {
   list-style: none;
   margin: 0 0.8em;
-  border: 1px solid #09ebeb;
-  color: #09ebeb;
+  border: 1px solid var(--primary-clr);
+  color: var(--primary-clr);
   border-radius: 100px;
   padding: 0.5em 1em;
 }
 
 #works-menu .active {
-  background-color: #09ebeb;
+  background-color: var(--primary-clr);
   color: var(--white);
 }
 
 #works-menu li:hover {
-  background-color: #09ebeb;
+  background-color: var(--primary-clr);
   color: var(--white);
   cursor: pointer;
   transition: 200ms ease-in;
@@ -617,7 +629,7 @@ header h1::after {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #57dffdcc;
+  background-color: rgba(0, 172, 255, .8);
   position: absolute;
   opacity: 0;
   transition: 0.4s linear;
@@ -719,14 +731,14 @@ header h1::after {
   text-align: center;
   margin-bottom: 1em;
   border-radius: 6px;
-  color: var(--gray);
+  color: var(--white);
   font-size: 1.05rem;
-  cursor: pointer;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: background-color 0.3s ease-in;
+  background-color: hsl(180, 20%, 23%);
 }
 
 .contact-info .item:hover {
@@ -735,11 +747,15 @@ header h1::after {
 }
 
 .contact-info .item i {
-  color: var(--gray);
   font-size: 1.5rem;
   line-height: 120px;
   display: block;
   height: 100px;
+}
+
+.contact-info i,
+.contact-info p {
+  color: var(--white);
 }
 
 .contact-info .item p {
@@ -749,7 +765,7 @@ header h1::after {
 
 .contact-info .item:hover i,
 .contact-info .item:hover p {
-  color: #fff;
+  color: var(--white);
 }
 
 #form {
@@ -762,15 +778,21 @@ header h1::after {
 #name,
 #email,
 #subject,
+#message {
+  background-color: hsl(180, 20%, 23%);
+}
+
+#name,
+#email,
+#subject,
 #message,
 #submit {
   width: 100%;
   padding: 1em;
   margin-bottom: 1em;
-  color: var(--gray);
+  color: var(--white);
   outline: none;
   border-radius: 6px;
-  border: 1px solid var(--gray);
   font-size: 1.05rem;
   background-color: none;
 }
@@ -799,7 +821,7 @@ header h1::after {
 }
 
 #submit:hover {
-  color: #fff;
+  color: var(--white);
   background-color: var(--primary-clr);
 }
 
