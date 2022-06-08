@@ -10,6 +10,14 @@
   --white: #fff;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -453,6 +461,11 @@ header h1::after {
   justify-content: center;
   align-items: center;
   margin-bottom: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 0.3em;
 }
 
 .service .bi {
@@ -508,15 +521,15 @@ header h1::after {
   }
 
   .service .bi {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   .service span {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .service p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -699,7 +712,6 @@ header h1::after {
 }
 
 .contact-info .item {
-  border: 1px solid var(--gray);
   height: 160px;
   width: 100%;
   text-align: center;
@@ -708,6 +720,10 @@ header h1::after {
   color: var(--gray);
   font-size: 1.05rem;
   cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: background-color 0.3s ease-in;
 }
 
