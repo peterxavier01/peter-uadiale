@@ -109,7 +109,7 @@ nav a {
 header {
   height: 100vh;
   min-height: 500px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../peter-uadiale/images/home2.jpg);
   background-size: cover;
   background-position: center;
@@ -476,17 +476,15 @@ header h1::after {
   background-color: var(--primary-clr);
 }
 
-.service:hover .bi:hover {
-  color: var(--white);
-}
-
-.service:hover p {
+.service:hover p,
+.service:hover .bi {
   color: var(--white);
 }
 
 .service .bi {
   font-size: 2rem;
   margin-bottom: 0.5em;
+  color: var(--primary-clr);
 }
 
 .service p,
@@ -498,7 +496,7 @@ header h1::after {
 .service p {
   padding-bottom: 1em;
   line-height: 1.8em;
-  font-size: 1.0625rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -601,7 +599,7 @@ header h1::after {
 }
 
 .work.show {
-  animation: fadeIn 0.5s ease;
+  animation: fadeIn 1s ease;
 }
 
 @keyframes fadeIn {
@@ -615,6 +613,18 @@ header h1::after {
 
 .work.hide {
   display: none;
+}
+
+.fadeIn {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 2s;
+}
+
+img {
+  transform: translateX(50%);
+  opacity: 0;
+  transition: all 2s;
 }
 
 .work {

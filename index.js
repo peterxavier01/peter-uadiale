@@ -16,6 +16,35 @@ $('nav ul a').on('click', function(){
   $(this).addClass('active');
 });
 
+// Lazy load Images
+const images = document.querySelectorAll("[data-src]");
+
+const preloadImage = ((img) => {
+  const src = img.getAttribute("data-src");
+  if (!src) return;
+  img.src = src;
+})
+
+const imgOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -100px 0px"
+};
+
+const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("fadeIn");
+      preloadImage(entry.target);
+      imgObserver.unobserve(entry.target);
+    }
+  })
+}, imgOptions);
+
+images.forEach(image => {
+  imgObserver.observe(image);
+});
 
 //Close nav on click
 navLinks.forEach(navLink => {
