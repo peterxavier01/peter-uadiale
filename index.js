@@ -145,23 +145,30 @@ fillItems.forEach(item => {
   aboutObserver.observe(item);
 });
 
-//Change active section on scroll
-window.onscroll = () => {
-  var current = "";
+// Add Active Class on Scroll
+var addClassOnScroll = function () {
+  var windowTop = $(window).scrollTop();
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    if (scrollY >= sectionTop ) {
-      current = section.getAttribute("id"); }
-  });
+  $("section[id]").each(function (index, elem) {
+    var offsetTop = $(elem).offset().top - 100;
+    var outerHeight = $(this).outerHeight(true);
 
-  navLi.forEach((li) => {
-    li.classList.remove("active");
-    if (li.classList.contains(current)) {
-      li.classList.add("active");
+    if (windowTop > offsetTop - 50 && windowTop < offsetTop + outerHeight) {
+      var elemId = $(elem).attr("id");
+      $("nav ul li a.active").removeClass("active");
+      $("nav ul li a[href='#" + elemId + "']").addClass("active");
+    } else if (windowTop < 50) {
+      $(".hero").addClass("active");
+      $("nav ul li:nth-child(2) a.active").removeClass("active");
     }
   });
 };
+
+$(function () {
+  $(window).on("scroll", function () {
+    addClassOnScroll();
+  });
+});
 
 //Adding event listeners to works-menu
 let filterTabContainer = document.querySelector("#works-menu");
