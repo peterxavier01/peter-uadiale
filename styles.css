@@ -43,6 +43,7 @@ nav span {
   background-color: #fff;
   padding: 1em 1.5em;
   z-index: 999;
+  transition: .3s ease-in;
 }
 
 .nav-scrolled .logo {
@@ -136,24 +137,16 @@ header {
 
 header p {
   font-size: 1rem;
+  margin-bottom: .3em;
+  opacity: 0;
+  transform: translateY(-2rem);
+  animation: fadeInDown 2s ease forwards;
 }
 
 header h1 {
-  font-size: 3.5rem;
-}
-
-header h1::after {
-  content: "A Developer";
-  animation: headerAnim 9s linear infinite;
-}
-
-@keyframes headerAnim {
-  50% {
-    content: "A Designer";
-  }
-  100% {
-    content: "A Marketer";
-  }
+  font-size: 2.2rem;
+  font-family: 'Cousine', monospace;
+  position: relative;
 }
 
 .header-btn {
@@ -165,13 +158,37 @@ header h1::after {
   align-items: center;
 }
 
+.header-body span {
+  color: var(--primary-clr);
+  text-transform: uppercase;
+  padding: 10px;
+  border-right: solid var(--primary-clr) 10px;
+  animation: cursor 1s ease-in-out infinite;
+}
+
+@keyframes cursor {
+  from {
+    border-color: var(--primary-clr);
+  }
+  to {
+    border-color: transparent;
+  }
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .header-btn a {
-  width: 200px;
+  width: 180px;
   text-decoration: none;
   color: var(--primary-clr);
   border: 1px solid var(--primary-clr);
   border-radius: 10px;
-  padding: 1em;
+  padding: .8em;
   margin: 0.7em 0;
   text-transform: uppercase;
   font-weight: normal;
@@ -270,6 +287,8 @@ header h1::after {
 
   .header-btn a {
     margin: 0 0.85em;
+    width: 200px;
+    padding: 1em;
   }
 }
 
