@@ -12,7 +12,6 @@ menu.onclick = menuToggle;
 // Typewriter Animation.
 var span = document.querySelector(".header-body span");
 var textArr = span.getAttribute("data-text").split(", ");
-console.log(textArr);
 var maxTextIndex = textArr.length;
 
 var sPerChar = 0.15;

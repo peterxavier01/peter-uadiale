@@ -948,6 +948,7 @@ footer span {
 
 .copyright {
   text-transform: capitalize;
+  text-align: center;
   color: #fff;
   font-size: 1.0625rem;
 }
