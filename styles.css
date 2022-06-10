@@ -507,8 +507,7 @@ header h1 {
 }
 
 .service p,
-.service span,
-.service .bi {
+.service span {
   color: var(--white);
 }
 
@@ -782,7 +781,10 @@ img {
   height: 100px;
 }
 
-.contact-info i,
+.contact-info i {
+  color: var(--primary-clr);
+}
+
 .contact-info p {
   color: var(--white);
 }
@@ -820,6 +822,7 @@ img {
   padding: 1em;
   margin-bottom: 1em;
   color: var(--white);
+  border: none;
   outline: none;
   border-radius: 6px;
   font-size: 1.05rem;
