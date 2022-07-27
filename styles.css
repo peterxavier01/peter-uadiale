@@ -896,11 +896,11 @@ img {
 
   .contact-info {
     flex-direction: row;
-    justify-content: space-between;
   }
 
   .contact-info .item {
     width: calc(33% - 1em);
+    margin-right: 1em;
   }
 }
 
