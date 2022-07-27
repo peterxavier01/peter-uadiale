@@ -1,10 +1,10 @@
 //Menu Toggler
-const menu = document.getElementById('hamburger');
-const links = document.getElementById('navLinks');
-const navLinks = document.querySelectorAll('.link');
+const menu = document.getElementById("hamburger");
+const links = document.getElementById("navLinks");
+const navLinks = document.querySelectorAll(".link");
 
 function menuToggle() {
-  links.classList.toggle('open');
+  links.classList.toggle("open");
 }
 
 menu.onclick = menuToggle;
@@ -18,7 +18,9 @@ var sPerChar = 0.15;
 var sBetweenWord = 1.5;
 var textIndex = 0;
 
-typing(textIndex, textArr[textIndex]);
+setTimeout(() => {
+  typing(textIndex, textArr[textIndex]);
+}, 3000);
 
 function typing(textIndex, text) {
   var charIndex = 0;
@@ -56,27 +58,27 @@ function deleting(textIndex, text) {
 }
 
 // Active state of nav-links
-$('nav ul a').on('click', function(){
-  $('ul#navLinks').find('a.active').removeClass('active');
-  $(this).addClass('active');
+$("nav ul a").on("click", function () {
+  $("ul#navLinks").find("a.active").removeClass("active");
+  $(this).addClass("active");
 });
 
 // Lazy load Images
 const images = document.querySelectorAll("[data-src]");
 
-const preloadImage = ((img) => {
+const preloadImage = (img) => {
   const src = img.getAttribute("data-src");
   if (!src) return;
   img.src = src;
-})
+};
 
 const imgOptions = {
   threshold: 0,
-  rootMargin: "0px 0px -100px 0px"
+  rootMargin: "0px 0px -100px 0px",
 };
 
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       return;
     } else {
@@ -84,64 +86,62 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
       preloadImage(entry.target);
       imgObserver.unobserve(entry.target);
     }
-  })
+  });
 }, imgOptions);
 
-images.forEach(image => {
+images.forEach((image) => {
   imgObserver.observe(image);
 });
 
 //Close nav on click
-navLinks.forEach(navLink => {
-  navLink.addEventListener('click', () => {
-    links.classList.remove('open');
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", () => {
+    links.classList.remove("open");
   });
 });
 
-
 // Navbar scroll
-const navbar = document.querySelector('nav');
-const header =  document.getElementById('header');
+const navbar = document.querySelector("nav");
+const header = document.getElementById("header");
 
 const navOptions = {
   root: null,
   threshold: 0,
-  rootMargin: '-600px 0px 0px 0px'
-}
+  rootMargin: "-600px 0px 0px 0px",
+};
 
 const navObserver = new IntersectionObserver((entries, navObserver) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) {
-      navbar.classList.add('nav-scrolled');
+      navbar.classList.add("nav-scrolled");
     } else {
-      navbar.classList.remove('nav-scrolled');
+      navbar.classList.remove("nav-scrolled");
     }
   });
 }, navOptions);
 
 navObserver.observe(header);
 
-
 //Skillbar Animation
-const fillItems = document.querySelectorAll('.fill');
+const fillItems = document.querySelectorAll(".fill");
 
 const aboutOptions = {
   threshold: 0,
-  rootMargin: '0px 0px 0px 0px'
-}
+  rootMargin: "0px 0px 0px 0px",
+};
 
 const aboutObserver = new IntersectionObserver((entries, aboutObserver) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) {
-      entry.target.style.animation = "none"; 
-    }else {
+      entry.target.style.animation = "none";
+    } else {
       entry.target.style.animation = entry.target.dataset.fill;
       aboutObserver.unobserve(entry.target);
-    }  
+    }
   });
 }, aboutOptions);
 
-fillItems.forEach(item => {
+fillItems.forEach((item) => {
   aboutObserver.observe(item);
 });
 
@@ -176,7 +176,6 @@ let works = document.querySelectorAll(".work");
 
 filterTabContainer.addEventListener("click", (e) => {
   if (e.target.classList.contains("filter-item")) {
-    
     // deactivate existing active 'filter-item'
     filterTabContainer.querySelector(".active").classList.remove("active");
 
@@ -197,15 +196,16 @@ filterTabContainer.addEventListener("click", (e) => {
   }
 });
 
-$(document).ready(function(){
-  $(window).scroll(function(){
-    if(this.scrollY > 20){
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if (this.scrollY > 20) {
       $(".goToTop").fadeIn();
-    }
-    else{
+    } else {
       $(".goToTop").fadeOut();
     }
   });
 
-  $(".goToTop").click(function(){scroll(0,0)});
+  $(".goToTop").click(function () {
+    scroll(0, 0);
+  });
 });
