@@ -1,0 +1,66 @@
+[33mc0064e8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: commit: update index.html
+[33m755149e[m HEAD@{1}: commit: update index.html
+[33m68ef356[m HEAD@{2}: commit: update index.html
+[33m15342dd[m HEAD@{3}: commit: update index.html
+[33m3c0ae68[m HEAD@{4}: commit: update styles.css
+[33mf68b57a[m HEAD@{5}: commit: update index.html
+[33m9d2ab84[m HEAD@{6}: commit: update styles.css
+[33meb0aca7[m HEAD@{7}: commit: update styles.css
+[33mb45f533[m HEAD@{8}: commit: update index.html
+[33m1f82c2b[m HEAD@{9}: commit: update styles.css
+[33mcd6e3f0[m HEAD@{10}: commit: update styles.css
+[33m5202588[m HEAD@{11}: commit: update styles.css
+[33m8b3b8f8[m HEAD@{12}: commit: update styles.css
+[33mb628efc[m HEAD@{13}: commit: update styles.css
+[33md0a9534[m HEAD@{14}: commit: update index.html
+[33m00cae2f[m HEAD@{15}: commit: update index.html
+[33m27ecf49[m HEAD@{16}: commit: update index.html
+[33m423dd9f[m HEAD@{17}: pull: Merge made by the 'recursive' strategy.
+[33m5cdf203[m HEAD@{18}: commit: update styles.css
+[33m87c730b[m HEAD@{19}: commit: update styles.css
+[33m317d608[m HEAD@{20}: commit: update index.html
+[33m9e2d824[m HEAD@{21}: commit: update index.html
+[33m84cbe42[m HEAD@{22}: commit: update index.html
+[33ma329e3a[m HEAD@{23}: commit: update styles.css
+[33m2bee68f[m HEAD@{24}: commit: update styles.css
+[33m78f57ed[m HEAD@{25}: commit: update index.html
+[33m0d3d8bd[m HEAD@{26}: commit: update index.html
+[33mb9d4ae7[m HEAD@{27}: commit: update index.html
+[33m1c6deff[m HEAD@{28}: pull: Fast-forward
+[33med77eea[m HEAD@{29}: commit: update styles.css
+[33mafa8c45[m HEAD@{30}: commit: update styles.css
+[33mbd81db7[m HEAD@{31}: commit: update styles.css
+[33m10b2ca4[m HEAD@{32}: commit: modified index.html
+[33m03c5ec5[m HEAD@{33}: commit: modified index.html
+[33m1272075[m HEAD@{34}: commit: modified index.html
+[33m69be8fc[m HEAD@{35}: pull: Merge made by the 'recursive' strategy.
+[33mb576439[m HEAD@{36}: commit: modified index.html
+[33mc0eb8b7[m HEAD@{37}: commit: Update index.html
+[33mbbb252e[m HEAD@{38}: commit: Update index.html
+[33m7a2d830[m HEAD@{39}: commit: Update index.html
+[33mea38446[m HEAD@{40}: commit: Update index.html
+[33m8f59985[m HEAD@{41}: commit: Update index.js
+[33m415e13e[m HEAD@{42}: commit: Update index.html
+[33mff07c2f[m HEAD@{43}: pull: Fast-forward
+[33mc6e8f53[m HEAD@{44}: pull: Fast-forward
+[33md3f52b6[m HEAD@{45}: commit: added images
+[33m600e9b6[m HEAD@{46}: pull: Fast-forward
+[33ma24fbe4[m HEAD@{47}: pull origin main --allow-unrelated-histories: Merge made by the 'recursive' strategy.
+[33m930c94a[m HEAD@{48}: commit: added images
+[33m3bf6a06[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{49}: Branch: renamed refs/heads/master to refs/heads/main
+[33m3bf6a06[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{51}: pull: Merge made by the 'recursive' strategy.
+[33mcda5335[m HEAD@{52}: commit: updatedImage
+[33m1591aac[m HEAD@{53}: commit: update
+[33m88287fb[m HEAD@{54}: commit: update
+[33m335f67e[m HEAD@{55}: commit: update
+[33m979e46f[m HEAD@{56}: commit: update
+[33m10517fc[m HEAD@{57}: commit: update index.html & styles.css
+[33m976d444[m HEAD@{58}: pull origin main: Merge made by the 'recursive' strategy.
+[33m035a14a[m HEAD@{59}: commit: updating styling
+[33m9504515[m HEAD@{60}: commit (merge): Merge branch 'main' of https://github.com/peterxavier01/peter-uadiale
+[33me599c7a[m HEAD@{61}: commit: updating
+[33mce736bf[m HEAD@{62}: commit: styling
+[33m41b6eb4[m HEAD@{63}: pull --rebase origin main (finish): returning to refs/heads/master
+[33m41b6eb4[m HEAD@{64}: pull --rebase origin main (pick): initialcommit
+[33m297ef27[m HEAD@{65}: pull --rebase origin main (start): checkout 297ef27af26f563082da8923d7281e747c96d734
+[33m9a42435[m HEAD@{66}: commit (initial): initialcommit
