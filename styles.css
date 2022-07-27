@@ -484,7 +484,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   border-radius: 8px;
   margin-bottom: 1em;
   border: 1px solid var(--primary-clr);
@@ -497,11 +497,11 @@ header h1 {
 }
 
 .service:hover p,
-.service:hover .bi {
+.service:hover .fa {
   color: var(--white);
 }
 
-.service .bi {
+.service .fa {
   font-size: 2rem;
   margin-bottom: 0.5em;
   color: var(--primary-clr);
@@ -516,13 +516,12 @@ header h1 {
   padding-bottom: 1em;
   line-height: 1.8em;
   font-size: 1rem;
-  text-align: center;
 }
 
 .service span {
   font-weight: 700;
   font-size: 1.22rem;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.5em;
 }
 
 @media screen and (min-width: 768px) {
@@ -550,7 +549,7 @@ header h1 {
     padding: 1em;
   }
 
-  .service .bi {
+  .service .fa {
     font-size: 1.8rem;
   }
 
