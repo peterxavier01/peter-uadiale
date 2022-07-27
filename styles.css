@@ -378,27 +378,27 @@ header h1 {
 }
 
 .html:after {
-  width: 92%;
+  width: 100%;
 }
 
 .css::after {
-  width: 80%;
+  width: 100%;
 }
 
 .js::after {
-  width: 79%;
+  width: 100%;
 }
 
 .xd::after {
-  width: 60%;
+  width: 100%;
 }
 
 .sass::after {
-  width: 80%;
+  width: 100%;
 }
 
 .jquery::after {
-  width: 82%;
+  width: 100%;
 }
 
 .html:after,
