@@ -602,6 +602,7 @@ header h1 {
   color: var(--primary-clr);
   border-radius: 100px;
   padding: 0.5em 1em;
+  font-size: 13px;
 }
 
 #works-menu .active {
@@ -717,6 +718,10 @@ img {
   .my-works {
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
+  }
+
+  #works-menu li {
+    font-size: 1rem;
   }
 }
 
