@@ -601,8 +601,11 @@ header h1 {
   border: 1px solid var(--primary-clr);
   color: var(--primary-clr);
   border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.5em 1em;
-  font-size: 11.5px;
+  font-size: 13px;
 }
 
 #works-menu .active {
