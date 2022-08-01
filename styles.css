@@ -944,7 +944,7 @@ img {
   }
 
   .contact-info .item {
-    width: calc(33% - 1em);
+    width: calc(50% - 1em);
     margin-right: 1em;
   }
 }
