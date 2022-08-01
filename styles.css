@@ -944,7 +944,10 @@ img {
   }
 
   .contact-info .item {
-    width: calc(50% - 1em);
+    width: calc(50%);
+  }
+
+  .contact-info .item:first-child {
     margin-right: 1em;
   }
 }
