@@ -161,7 +161,6 @@ header h1 {
 
 .header-body span {
   color: var(--primary-clr);
-  text-transform: uppercase;
   padding: 10px;
   border-right: solid var(--primary-clr) 10px;
   animation: cursor 1s ease-in-out infinite;
@@ -703,6 +702,44 @@ img {
   object-position: top;
   border-radius: 6px;
   transition: 0.4s linear;
+}
+
+.work-info div:first-of-type {
+  font-size: 0.8rem;
+}
+
+.work .work-links {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.work .work-demo-link,
+.work .work-repo-link {
+  text-decoration: none;
+  color: var(--white);
+  margin-right: 0.3em;
+}
+
+.work .work-demo-link {
+  border: 1px solid var(--white);
+  padding: 0.3em;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.work .work-demo-link:hover,
+.work .work-repo-link:hover {
+  background-color: var(--white);
+  color: rgba(0, 172, 255, 0.8);
+  transition: 0.2s ease-in-out;
+}
+
+.work .work-repo-link {
+  border: 1px solid var(--white);
+  padding: 0.3em;
+  border-radius: 6px;
 }
 
 @media screen and (min-width: 768px) {
