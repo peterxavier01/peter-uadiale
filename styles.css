@@ -678,6 +678,11 @@ img {
   transform: scale(1);
 }
 
+.work:hover .work-info {
+  transition-delay: 0.5s;
+  transition-timing-function: ease-in;
+}
+
 .work-info {
   position: absolute;
   bottom: 1em;
@@ -687,8 +692,24 @@ img {
 }
 
 .work-info h3,
+.work-info p,
 .work-info div {
   color: #fff;
+}
+
+.work-info p {
+  font-size: 13px;
+  margin-block: 0.5em;
+  line-height: 18px;
+}
+
+.work-info p,
+.work-info div:first-of-type {
+  padding-right: 0.5em;
+}
+
+.work-info div {
+  font-weight: 800;
 }
 
 .my-works {
@@ -745,6 +766,12 @@ img {
 @media screen and (min-width: 768px) {
   #work {
     padding: 0 3em;
+  }
+
+  .work-info p {
+    font-size: 13px;
+    margin-block: 0.5em;
+    line-height: 18px;
   }
 
   #work h1 {
