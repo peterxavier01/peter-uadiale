@@ -27,7 +27,7 @@ export default function Timeline({ data, src }: TimelineProps) {
         {data.map((item: TimelineItem) => (
           <div className="flex items-center gap-5" key={item.id}>
             <div className="relative z-[999]">
-              <Divider key={item.id} src={src} alt="work experience" />
+              <Divider id={item.id} src={src} alt="work experience" />
             </div>
 
             <div className="relative">
