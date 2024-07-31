@@ -19,7 +19,7 @@ export const Route = createFileRoute("/about")({
 
 function AboutPage() {
   return (
-    <main className="my-16 min-h-[calc(100dvh-99px)] font-montserrat">
+    <main className="my-8 md:my-16 min-h-[calc(100dvh-99px)] font-montserrat">
       <section className="grid gap-7 md:grid-cols-2">
         <div>
           <Heading title="About Me" className="mb-8" />
