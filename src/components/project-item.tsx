@@ -16,18 +16,17 @@ interface ProjectItemProps {
 
 export default function ProjectItem({ project }: ProjectItemProps) {
   return (
-    <div className="grid gap-16 md:grid-cols-2">
+    <div className="project-item grid items-center gap-16 md:grid-cols-2">
       <div>
         <img src={project.image || Demo} alt={project.name} />
       </div>
 
       <div>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center gap-4">
           <h3 className="mb-4 text-h5 font-bold md:text-h4">{project.name}</h3>
-          <Badge variant="project" className="">
-            {project.category}
-          </Badge>
+          <Badge variant="project">{project.category}</Badge>
         </div>
+
         <p className="text-xxs">{project.description}</p>
 
         <div className="mt-8">
@@ -45,7 +44,7 @@ export default function ProjectItem({ project }: ProjectItemProps) {
             ))}
           </div>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex items-center gap-4 max-sm:flex-wrap">
             <Link
               to={project.live_preview_url}
               target="_blank"
