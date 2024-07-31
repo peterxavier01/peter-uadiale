@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createRouter } from "@tanstack/react-router";
 
 import { routeTree } from "./routeTree.gen.ts";
+import MotionProvider from "@/components/motion-provider.tsx";
 
 import "./index.css";
 
@@ -18,6 +19,8 @@ declare module "@tanstack/react-router" {
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+    <MotionProvider>
+      <RouterProvider router={router} />
+    </MotionProvider>
+  </React.StrictMode>,
 );
