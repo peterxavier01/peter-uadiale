@@ -2,13 +2,18 @@ import { navLinks } from "@/lib/data";
 import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 
-export default function NavItems() {
+interface NavItemsProps {
+  setOpen?: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function NavItems({ setOpen }: NavItemsProps) {
   return (
     <>
       {navLinks.map((link) => (
         <li
           key={link.id}
-          className="text-[15px] lg:text-xxs uppercase list-none"
+          className="list-none text-[15px] uppercase lg:text-xxs"
+          onClick={() => (setOpen ? setOpen(false) : null)}
         >
           <Link to={link.href}>
             {({ isActive }) => {
@@ -16,7 +21,7 @@ export default function NavItems() {
                 <p
                   className={
                     isActive
-                      ? "text-golden-yellow font-bold transition"
+                      ? "font-bold text-golden-yellow transition"
                       : "hover:text-golden-yellow"
                   }
                 >
@@ -30,7 +35,7 @@ export default function NavItems() {
 
       <Button
         variant="accent"
-        className="uppercase h-[51px] block md:hidden w-full"
+        className="block h-[51px] w-full uppercase md:hidden"
       >
         Download cv
       </Button>
