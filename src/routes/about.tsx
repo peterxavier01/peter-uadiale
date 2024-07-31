@@ -6,6 +6,7 @@ import SkillCard from "@/components/skill-card";
 import Timeline from "@/components/timeline";
 import ServiceCard from "@/components/service-card";
 import { Button } from "@/components/ui/button";
+import AnimatedOverlay from "@/components/animated-overlay";
 
 import Work from "../assets/icon-briefcase.svg";
 import Education from "../assets/icon-school.svg";
@@ -81,6 +82,7 @@ function AboutPage() {
           </Link>
         </div>
       </section>
+      <AnimatedOverlay />
     </main>
   );
 }

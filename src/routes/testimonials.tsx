@@ -1,3 +1,4 @@
+import AnimatedOverlay from "@/components/animated-overlay";
 import Heading from "@/components/heading";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -9,6 +10,8 @@ function Testimonials() {
   return (
     <main className="min-h-[calc(100dvh-99px)] font-montserrat">
       <Heading title="Testimonials" />
+
+      <AnimatedOverlay />
     </main>
   );
 }
