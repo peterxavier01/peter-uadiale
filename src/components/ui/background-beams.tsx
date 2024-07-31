@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 
@@ -63,12 +63,12 @@ export const BackgroundBeams = React.memo(
     return (
       <div
         className={cn(
-          "absolute  h-full w-full inset-0  [mask-size:40px] [mask-repeat:no-repeat] flex items-center justify-center",
-          className
+          "absolute inset-0 flex h-full w-full items-center justify-center [mask-repeat:no-repeat] [mask-size:40px]",
+          className,
         )}
       >
         <svg
-          className=" z-0 h-full w-full pointer-events-none absolute "
+          className="pointer-events-none absolute z-0 h-full w-full"
           width="100%"
           height="100%"
           viewBox="0 0 696 316"
@@ -83,17 +83,17 @@ export const BackgroundBeams = React.memo(
           ></path>
 
           {paths.map((path, index) => (
-            <motion.path
+            <m.path
               key={`path-` + index}
               d={path}
               stroke={`url(#linearGradient-${index})`}
               strokeOpacity="0.4"
               strokeWidth="0.5"
-            ></motion.path>
+            ></m.path>
           ))}
           <defs>
             {paths.map((_path, index) => (
-              <motion.linearGradient
+              <m.linearGradient
                 id={`linearGradient-${index}`}
                 key={`gradient-${index}`}
                 initial={{
@@ -119,7 +119,7 @@ export const BackgroundBeams = React.memo(
                 <stop stopColor="#18CCFC"></stop>
                 <stop offset="32.5%" stopColor="#6344F5"></stop>
                 <stop offset="100%" stopColor="#AE48FF" stopOpacity="0"></stop>
-              </motion.linearGradient>
+              </m.linearGradient>
             ))}
 
             <radialGradient
@@ -138,7 +138,7 @@ export const BackgroundBeams = React.memo(
         </svg>
       </div>
     );
-  }
+  },
 );
 
 BackgroundBeams.displayName = "BackgroundBeams";
