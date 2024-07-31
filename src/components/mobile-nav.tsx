@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -12,14 +13,16 @@ import {
 } from "@/components/ui/sheet";
 
 export default function MobileNav() {
+  const [open, setOpen] = useState<boolean>(false);
+
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild className="block md:hidden">
         <Button variant="ghost">
           <Menu />
         </Button>
       </SheetTrigger>
-      <SheetContent className="bg-dark-brown border-none text-off-white">
+      <SheetContent className="border-none bg-dark-brown text-off-white">
         <SheetHeader>
           <SheetTitle className="sr-only">Menu</SheetTitle>
           <SheetDescription className="sr-only">
@@ -27,8 +30,8 @@ export default function MobileNav() {
           </SheetDescription>
         </SheetHeader>
 
-        <div className="flex flex-col gap-6 mt-8">
-          <NavItems />
+        <div className="mt-8 flex flex-col gap-6">
+          <NavItems setOpen={setOpen} />
         </div>
       </SheetContent>
     </Sheet>
