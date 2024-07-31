@@ -31,6 +31,7 @@ import Sass from "../assets/icon-sass.svg";
 import Sanity from "../assets/icon-sanity.svg";
 import Threejs from "../assets/icon-threejs.svg";
 import WordPress from "../assets/icon-wordpress.svg";
+import Tailwind from "../assets/icon-tailwindcss.svg";
 
 // Services
 import ResponsiveIcon from "../assets/icon-google-code.svg";
@@ -47,10 +48,30 @@ export const navLinks = [
 ];
 
 export const socialIcons = [
-  { id: 1, name: "GitHub", icon: Github, href: "https://github.com" },
-  { id: 2, name: "TwitterX", icon: TwitterX, href: "https://twitter.com" },
-  { id: 3, name: "Instagram", icon: Instagram, href: "https://instagram.com" },
-  { id: 4, name: "Linkedin", icon: Linkedin, href: "https://linkedin.com" },
+  {
+    id: 1,
+    name: "GitHub",
+    icon: Github,
+    href: "https://github.com/peterxavier01/",
+  },
+  {
+    id: 2,
+    name: "TwitterX",
+    icon: TwitterX,
+    href: "https://twitter.com/peter_uadiale",
+  },
+  {
+    id: 3,
+    name: "Instagram",
+    icon: Instagram,
+    href: "https://www.instagram.com/peter_xavier__/",
+  },
+  {
+    id: 4,
+    name: "Linkedin",
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/peter-o-uadiale-69541a19a/",
+  },
 ];
 
 export const skills = [
@@ -127,5 +148,18 @@ export const services = [
     title: "Accessibility and SEO Best Practices",
     description:
       "I adhere to the best practices for web accessibility, making your website user-friendly for people with disabilities. Additionally, I implement SEO strategies to improve your site’s visibility on search engines, driving more traffic to your website.",
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    images: ["", ""],
+    name: "Style Vault",
+    description:
+      "Style Vault is a modern, minimalistic clothing e-commerce solution. It offers sales of mens's and women's wears and accessories. It also offers a seamless payment process to get you your order(s) ASAP.",
+    tools: [Next, Framer, Typescript, Tailwind],
+    live_preview_url: "https://style-vault.vercel.app/",
+    github_repo_url: "https://github.com/peterxavier01/style-vault",
   },
 ];
