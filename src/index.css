@@ -71,6 +71,27 @@
   }
 }
 
+@layer components {
+  .project-item {
+
+    &:nth-child(even) {
+      &>div:nth-of-type(1) {
+        @media (width > 768px) {
+          order: 2;
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      &>div:nth-of-type(2) {
+        @media (width > 768px) {
+          order: 1;
+        }
+      }
+    }
+  }
+}
+
 .wrapper {
   @apply px-4 md:px-10 lg:px-20;
 }
