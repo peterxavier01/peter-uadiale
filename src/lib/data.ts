@@ -39,6 +39,10 @@ import TypescriptIcon from "../assets/icon-typescript-1.svg";
 import PerformanceIcon from "../assets/icon-increase.svg";
 import AccessibilityIcon from "../assets/icon-accessibility.svg";
 
+// Contact
+import Email from "../assets/icon-email.svg";
+import Location from "../assets/icon-location.svg";
+
 export const navLinks = [
   { id: 1, name: "Home", href: "/" },
   { id: 2, name: "About", href: "/about" },
@@ -151,6 +155,11 @@ export const services = [
   },
 ];
 
+export const contactData = [
+  { id: 1, title: "Email", content: "uadialepeter@gmail.com", icon: Email },
+  { id: 2, title: "Location", content: "Lagos, Nigeria", icon: Location },
+];
+
 export const projects = [
   {
     id: 1,
@@ -167,5 +176,52 @@ export const projects = [
     ],
     live_preview_url: "https://style-vault.vercel.app/",
     github_repo_url: "https://github.com/peterxavier01/style-vault",
+  },
+  {
+    id: 2,
+    image: "",
+    name: "RealHome",
+    category: "Web App",
+    description:
+      "Style Vault is a modern, minimalistic clothing e-commerce solution. It offers sales of mens's and women's wears and accessories. It also offers a seamless payment process to get you your order(s) ASAP.",
+    tools: [
+      { id: 1, icon: Next, name: "Next.js" },
+      { id: 2, icon: Typescript, name: "Typescript" },
+      { id: 3, icon: Tailwind, name: "Tailwind" },
+      { id: 4, icon: Framer, name: "Framer Motion" },
+      { id: 5, icon: Sass, name: "Sass" },
+    ],
+    live_preview_url: "https://style-vault.vercel.app/",
+    github_repo_url: "https://github.com/peterxavier01/style-vault",
+  },
+  {
+    id: 3,
+    image: "",
+    name: "Brainy",
+    category: "AI",
+    description:
+      "Style Vault is a modern, minimalistic clothing e-commerce solution. It offers sales of mens's and women's wears and accessories. It also offers a seamless payment process to get you your order(s) ASAP.",
+    tools: [
+      { id: 1, icon: Next, name: "Next.js" },
+      { id: 2, icon: Typescript, name: "Typescript" },
+      { id: 3, icon: Tailwind, name: "Tailwind" },
+    ],
+    live_preview_url: "https://next13-5-ai-saas.vercel.app/",
+    github_repo_url: "https://github.com/peterxavier01/next-ai-saas",
+  },
+  {
+    id: 4,
+    image: "",
+    name: "Otter Stream",
+    category: "Web App",
+    description:
+      "Style Vault is a modern, minimalistic clothing e-commerce solution. It offers sales of mens's and women's wears and accessories. It also offers a seamless payment process to get you your order(s) ASAP.",
+    tools: [
+      { id: 1, icon: React, name: "React.js" },
+      { id: 2, icon: MaterialUI, name: "Material UI" },
+      { id: 3, icon: JS, name: "JavaScript" },
+    ],
+    live_preview_url: "https://otterstream.vercel.app/",
+    github_repo_url: "https://github.com/peterxavier01/otter-stream",
   },
 ];
