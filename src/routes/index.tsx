@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import Typewriter from "typewriter-effect";
 
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import AnimatedOverlay from "@/components/animated-overlay";
 
 import { socialIcons } from "@/lib/data";
 
@@ -17,7 +19,21 @@ function HomePage() {
         </p>
         <h1 className="text-h4 font-bold md:text-h3 lg:text-h2">
           I&apos;m <span className="text-golden-yellow">Peter</span>, <br />{" "}
-          Frontend Engineer.
+          <Typewriter
+            options={{
+              strings: [
+                "Frontend Engineer.",
+                "Tech Enthusiast.",
+                "Problem Solver.",
+                "Creative Thinker.",
+                "Detail-oriented.",
+                "Learner.",
+                "Team Player.",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </h1>
         <p className="mt-4 text-xxs lg:text-paragraph">
           Currently based in Nigeria. I love crafting brilliant and professional
@@ -34,6 +50,7 @@ function HomePage() {
             target="_blank"
           >
             <img
+              title={icon.name}
               src={icon.icon}
               alt={icon.name}
               className="h-7 w-7 md:h-10 md:w-10"
@@ -43,6 +60,7 @@ function HomePage() {
       </div>
 
       <BackgroundBeams />
+      <AnimatedOverlay />
     </main>
   );
 }
