@@ -1,25 +1,40 @@
-import { createRootRoute, Outlet } from "@tanstack/react-router";
+import {
+  createRootRoute,
+  useMatch,
+  useMatches,
+  Outlet,
+} from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
+import { AnimatePresence } from "framer-motion";
 
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
-export const Route = createRootRoute({
-  component: () => {
-    const isHomePage = window.location.pathname === "/";
+const Root = () => {
+  const matches = useMatches();
+  const match = useMatch({ strict: false });
+  const nextMatchIndex = matches.findIndex((d) => d.id === match.id) + 1;
+  const nextMatch = matches[nextMatchIndex];
 
-    return (
-      <div className="relative min-h-screen bg-dark-brown text-off-white">
-        <Navbar />
+  const isHomePage = window.location.pathname === "/";
 
-        <div className="wrapper">
-          <Outlet />
-        </div>
+  return (
+    <div className="relative min-h-screen bg-dark-brown text-off-white">
+      <Navbar />
 
-        <TanStackRouterDevtools />
-
-        {!isHomePage ? <Footer /> : null}
+      <div className="wrapper">
+        <AnimatePresence mode="wait">
+          <Outlet key={nextMatch.id} />
+        </AnimatePresence>
       </div>
-    );
-  },
+
+      <TanStackRouterDevtools position="bottom-right" />
+
+      {!isHomePage ? <Footer /> : null}
+    </div>
+  );
+};
+
+export const Route = createRootRoute({
+  component: Root,
 });
