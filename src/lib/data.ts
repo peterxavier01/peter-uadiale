@@ -156,6 +156,7 @@ export const projects = [
     id: 1,
     image: "",
     name: "Style Vault",
+    category: "Ecommerce",
     description:
       "Style Vault is a modern, minimalistic clothing e-commerce solution. It offers sales of mens's and women's wears and accessories. It also offers a seamless payment process to get you your order(s) ASAP.",
     tools: [
