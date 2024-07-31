@@ -11,9 +11,9 @@ function getCurrentYear() {
 export default function Footer() {
   return (
     <footer className="wrapper flex min-h-24 flex-wrap items-center justify-between gap-8 bg-charcoal py-6">
-      <section className="h-[36px] w-[99px]">
+      <Link to="/" className="h-[36px] w-[99px]">
         <img src={Logo} alt="logo" className="block w-full" />
-      </section>
+      </Link>
 
       <section>
         <p>© {getCurrentYear()} Peter Uadiale | All Rights Reserved</p>
