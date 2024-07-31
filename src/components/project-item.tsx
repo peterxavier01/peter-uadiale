@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Github from "@/components/icons/github";
 import LivePreview from "@/components/icons/live-preview";
 import IconWithTooltip from "@/components/icon-with-tooltip";
+import { Badge } from "@/components/ui/badge";
 
 import { projects } from "@/lib/data";
 
@@ -23,7 +24,9 @@ export default function ProjectItem({ project }: ProjectItemProps) {
       <div>
         <div className="flex items-center justify-between">
           <h3 className="mb-4 text-h5 font-bold md:text-h4">{project.name}</h3>
-          {/**Badge */}
+          <Badge variant="project" className="">
+            {project.category}
+          </Badge>
         </div>
         <p className="text-xxs">{project.description}</p>
 
@@ -42,12 +45,12 @@ export default function ProjectItem({ project }: ProjectItemProps) {
             ))}
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex flex-wrap items-center gap-4">
             <Link
               to={project.live_preview_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full max-w-[247px]"
+              className="w-full md:max-w-[247px]"
             >
               <Button
                 variant="accent"
@@ -62,7 +65,7 @@ export default function ProjectItem({ project }: ProjectItemProps) {
               to={project.github_repo_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full max-w-[247px]"
+              className="w-full md:max-w-[247px]"
             >
               <Button
                 variant="bordered"
