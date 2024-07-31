@@ -154,11 +154,16 @@ export const services = [
 export const projects = [
   {
     id: 1,
-    images: ["", ""],
+    image: "",
     name: "Style Vault",
     description:
       "Style Vault is a modern, minimalistic clothing e-commerce solution. It offers sales of mens's and women's wears and accessories. It also offers a seamless payment process to get you your order(s) ASAP.",
-    tools: [Next, Framer, Typescript, Tailwind],
+    tools: [
+      { id: 1, icon: Next, name: "Next.js" },
+      { id: 2, icon: Framer, name: "Framer Motion" },
+      { id: 3, icon: Typescript, name: "Typescript" },
+      { id: 4, icon: Tailwind, name: "Tailwind" },
+    ],
     live_preview_url: "https://style-vault.vercel.app/",
     github_repo_url: "https://github.com/peterxavier01/style-vault",
   },
