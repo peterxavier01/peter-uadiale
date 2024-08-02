@@ -1,6 +1,7 @@
-import { socialIcons } from "@/lib/data";
-import Logo from "../assets/Logo.svg";
 import { Link } from "@tanstack/react-router";
+
+import { socialIcons } from "@/lib/data";
+import Logo from "@/assets/Logo.svg";
 
 function getCurrentYear() {
   const date = new Date();
@@ -21,12 +22,11 @@ export default function Footer() {
 
       <section className="flex items-center gap-8">
         {socialIcons.map((icon) => (
-          <Link
-            to={icon.href}
-            key={icon.id}
-            className="h-4 w-4 first-of-type:invert-[100] md:h-6 md:w-6"
-          >
-            <img src={icon.icon} alt={icon.name} className="block w-full" />
+          <Link to={icon.href} key={icon.id} title={icon.name}>
+            <icon.icon
+              fill="var(--off-white)"
+              className="h-4 w-4 md:h-6 md:w-6"
+            />
           </Link>
         ))}
       </section>
