@@ -32,6 +32,7 @@
 
     --font-montserrat: "Montserrat", sans-serif;
     --accent-clr: #F0A500;
+    --off-white: #F4F4F9;
   }
 
   .dark {
@@ -90,6 +91,14 @@
         }
       }
     }
+  }
+
+  .social-icon {
+    @apply h-7 w-7 transition md:h-10 md:w-10;
+  }
+
+  .social-icon:hover path {
+    fill: var(--accent-clr);
   }
 }
 
