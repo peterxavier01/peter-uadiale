@@ -23,10 +23,7 @@ export default function Footer() {
       <section className="flex items-center gap-8">
         {socialIcons.map((icon) => (
           <Link to={icon.href} key={icon.id} title={icon.name}>
-            <icon.icon
-              fill="var(--off-white)"
-              className="h-4 w-4 md:h-6 md:w-6"
-            />
+            <icon.icon fill="var(--off-white)" className="h-6 w-6" />
           </Link>
         ))}
       </section>
