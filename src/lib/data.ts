@@ -1,8 +1,9 @@
 // Social Icons
 import Github from "../assets/icon-github.svg";
-import TwitterX from "../assets/icon-twitter-x.svg";
-import Instagram from "../assets/icon-instgram.svg";
-import Linkedin from "../assets/icon-linkedin.svg";
+import GithubIcon from "../components/icons/github";
+import TwitterXIcon from "../components/icons/twitter-x";
+import InstagramIcon from "../components/icons/instagram";
+import LinkedinIcon from "../components/icons/linkedin";
 
 // Skill Icons
 import React from "../assets/icon-react.svg";
@@ -55,25 +56,25 @@ export const socialIcons = [
   {
     id: 1,
     name: "GitHub",
-    icon: Github,
+    icon: GithubIcon,
     href: "https://github.com/peterxavier01/",
   },
   {
     id: 2,
     name: "TwitterX",
-    icon: TwitterX,
+    icon: TwitterXIcon,
     href: "https://twitter.com/peter_uadiale",
   },
   {
     id: 3,
     name: "Instagram",
-    icon: Instagram,
+    icon: InstagramIcon,
     href: "https://www.instagram.com/peter_xavier__/",
   },
   {
     id: 4,
     name: "Linkedin",
-    icon: Linkedin,
+    icon: LinkedinIcon,
     href: "https://www.linkedin.com/in/peter-o-uadiale-69541a19a/",
   },
 ];
