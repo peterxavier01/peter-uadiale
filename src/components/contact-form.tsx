@@ -43,7 +43,7 @@ export default function ContactForm() {
 
       <Button
         variant="accent"
-        className="mt-4 h-[51px] w-full max-w-[247px]"
+        className="mt-4 h-[51px] w-full max-w-[247px] uppercase"
         type="submit"
       >
         Send
