@@ -31,6 +31,7 @@
     --chart-5: 27 87% 67%;
 
     --font-montserrat: "Montserrat", sans-serif;
+    --accent-clr: #F0A500;
   }
 
   .dark {
@@ -89,6 +90,12 @@
         }
       }
     }
+  }
+}
+
+@layer utilities {
+  .accent-clr {
+    color: var(--accent-clr);
   }
 }
 
