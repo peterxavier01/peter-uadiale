@@ -12,7 +12,7 @@ export default function NavItems({ setOpen }: NavItemsProps) {
       {navLinks.map((link) => (
         <li
           key={link.id}
-          className="list-none text-[15px] uppercase lg:text-xxs"
+          className="list-none text-sm uppercase lg:text-xxs"
           onClick={() => (setOpen ? setOpen(false) : null)}
         >
           <Link to={link.href}>
