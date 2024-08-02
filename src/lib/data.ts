@@ -40,8 +40,8 @@ import PerformanceIcon from "../assets/icon-increase.svg";
 import AccessibilityIcon from "../assets/icon-accessibility.svg";
 
 // Contact
-import Email from "../assets/icon-email.svg";
-import Location from "../assets/icon-location.svg";
+import Email from "@/components/icons/email";
+import Location from "@/components/icons/location";
 
 export const navLinks = [
   { id: 1, name: "Home", href: "/" },
@@ -158,6 +158,37 @@ export const services = [
 export const contactData = [
   { id: 1, title: "Email", content: "uadialepeter@gmail.com", icon: Email },
   { id: 2, title: "Location", content: "Lagos, Nigeria", icon: Location },
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Francis Xavier",
+    position: "Xavion, CEO",
+    content:
+      "Peter was very professional, paid close attention to details to provide us with a great product that checked all our requirements.",
+  },
+  {
+    id: 2,
+    name: "Francis Xavier",
+    position: "Xavion, CEO",
+    content:
+      "Peter was very professional, paid close attention to details to provide us with a great product that checked all our requirements.",
+  },
+  {
+    id: 3,
+    name: "Francis Xavier",
+    position: "Xavion, CEO",
+    content:
+      "Peter was very professional, paid close attention to details to provide us with a great product that checked all our requirements.",
+  },
+  {
+    id: 4,
+    name: "Francis Xavier",
+    position: "Xavion, CEO",
+    content:
+      "Peter was very professional, paid close attention to details to provide us with a great product that checked all our requirements.",
+  },
 ];
 
 export const projects = [
