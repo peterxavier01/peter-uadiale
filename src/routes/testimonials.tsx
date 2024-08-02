@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import AnimatedOverlay from "@/components/animated-overlay";
 import Heading from "@/components/heading";
 import TestimonialCard from "@/components/testimonial-card";
 
@@ -23,8 +22,6 @@ function Testimonials() {
           <TestimonialCard key={testimonial.id} testimonial={testimonial} />
         ))}
       </section>
-
-      <AnimatedOverlay />
     </main>
   );
 }

@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import Heading from "@/components/heading";
-import AnimatedOverlay from "@/components/animated-overlay";
 import ContactCard from "@/components/contact-card";
 import ContactForm from "@/components/contact-form";
 
@@ -25,8 +24,6 @@ function ContactPage() {
       <section className="mt-[72px]">
         <ContactForm />
       </section>
-
-      <AnimatedOverlay />
     </main>
   );
 }

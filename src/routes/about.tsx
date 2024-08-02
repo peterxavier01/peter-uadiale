@@ -6,7 +6,6 @@ import SkillCard from "@/components/skill-card";
 import Timeline from "@/components/timeline";
 import ServiceCard from "@/components/service-card";
 import { Button } from "@/components/ui/button";
-import AnimatedOverlay from "@/components/animated-overlay";
 
 import Work from "../assets/icon-briefcase.svg";
 import Education from "../assets/icon-school.svg";
@@ -19,7 +18,7 @@ export const Route = createFileRoute("/about")({
 
 function AboutPage() {
   return (
-    <main className="my-8 md:my-16 min-h-[calc(100dvh-99px)] font-montserrat">
+    <main className="my-8 min-h-[calc(100dvh-99px)] font-montserrat md:my-16">
       <section className="grid gap-7 md:grid-cols-2">
         <div>
           <Heading title="About Me" className="mb-8" />
@@ -82,7 +81,6 @@ function AboutPage() {
           </Link>
         </div>
       </section>
-      <AnimatedOverlay />
     </main>
   );
 }

@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import Heading from "@/components/heading";
-import AnimatedOverlay from "@/components/animated-overlay";
 import ProjectItem from "@/components/project-item";
 
 import { projects } from "@/lib/data";
@@ -20,8 +19,6 @@ function ProjectsPage() {
           <ProjectItem key={project.id} project={project} />
         ))}
       </section>
-
-      <AnimatedOverlay />
     </main>
   );
 }
