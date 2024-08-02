@@ -29,7 +29,7 @@ const HeroBtnData: HeroBtnDataProps[] = [
 
 function HomePage() {
   return (
-    <main className="grid min-h-dvh place-items-center gap-14 font-montserrat md:min-h-[calc(100dvh-99px)] md:grid-cols-12">
+    <main className="grid min-h-dvh place-items-center gap-8 font-montserrat md:min-h-[calc(100dvh-99px)] md:grid-cols-12">
       <div className="z-10 aspect-auto md:col-span-8">
         <p className="text-xxs font-medium uppercase lg:text-paragraph">
           Hello
@@ -59,7 +59,11 @@ function HomePage() {
 
         <div className="flex items-center gap-4 max-sm:flex-wrap md:gap-8">
           {HeroBtnData.map((btn: HeroBtnDataProps) => (
-            <Link key={btn.id} to={btn.href} className="w-full md:max-w-[305px]">
+            <Link
+              key={btn.id}
+              to={btn.href}
+              className="w-full md:max-w-[305px]"
+            >
               <Button
                 variant={btn.variant}
                 className="h-12 w-full text-sm uppercase md:h-16 md:text-lg"
