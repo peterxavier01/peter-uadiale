@@ -4,7 +4,6 @@ import {
   useMatches,
   Outlet,
 } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 import { AnimatePresence } from "framer-motion";
 
 import Footer from "@/components/footer";
@@ -27,8 +26,6 @@ const Root = () => {
           <Outlet key={nextMatch.id} />
         </AnimatePresence>
       </div>
-
-      <TanStackRouterDevtools position="bottom-right" />
 
       {!isHomePage ? <Footer /> : null}
     </div>
