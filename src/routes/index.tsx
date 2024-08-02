@@ -3,7 +3,6 @@ import Typewriter from "typewriter-effect";
 
 import { Button } from "@/components/ui/button";
 import { BackgroundBeams } from "@/components/ui/background-beams";
-import AnimatedOverlay from "@/components/animated-overlay";
 
 import { socialIcons } from "@/lib/data";
 
@@ -73,25 +72,23 @@ function HomePage() {
       </div>
 
       <div className="z-10 flex w-full gap-[51px] md:col-span-4 md:ml-auto md:w-max md:flex-col">
-        {socialIcons.map((icon) => (
-          <Link
-            to={icon.href}
-            key={icon.id}
-            className="first-of-type:invert-[100]"
-            target="_blank"
-          >
-            <img
-              title={icon.name}
-              src={icon.icon}
-              alt={icon.name}
-              className="h-7 w-7 md:h-10 md:w-10"
-            />
-          </Link>
-        ))}
+        {socialIcons.map((item) => {
+          const Icon = item.icon;
+
+          return (
+            <Link
+              to={item.href}
+              key={item.id}
+              target="_blank"
+              title={item.name}
+            >
+              <Icon fill="var(--off-white)" className="social-icon" />
+            </Link>
+          );
+        })}
       </div>
 
       <BackgroundBeams />
-      <AnimatedOverlay />
     </main>
   );
 }
