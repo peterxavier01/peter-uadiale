@@ -24,6 +24,7 @@ const config = {
         charcoal: "#343A40",
         "off-white": "#F4F4F9",
         "dark-brown": "#3B3A30",
+        gray: "#D9D9D9",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -98,7 +99,7 @@ const config = {
 function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
   );
 
   addBase({
