@@ -1,13 +1,9 @@
-import {
-  createRootRoute,
-  useMatch,
-  useMatches,
-  Outlet,
-} from "@tanstack/react-router";
+import { createRootRoute, useMatch, useMatches } from "@tanstack/react-router";
 import { AnimatePresence } from "framer-motion";
 
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import { AnimatedOutlet } from "@/components/AnimatedOutlet";
 
 const Root = () => {
   const matches = useMatches();
@@ -21,9 +17,9 @@ const Root = () => {
     <div className="relative min-h-screen bg-dark-brown text-off-white">
       <Navbar />
 
-      <div className="wrapper">
+      <div className="wrapper overflow-hidden">
         <AnimatePresence mode="wait">
-          <Outlet key={nextMatch.id} />
+          <AnimatedOutlet key={nextMatch.id} />
         </AnimatePresence>
       </div>
 
