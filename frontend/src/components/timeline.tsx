@@ -35,21 +35,21 @@ export default function Timeline({ data, src }: TimelineProps) {
 
             <div className="relative">
               <>
-                <h4 className="text-lg font-bold">
+                <h4 className="text-base font-bold">
                   {"role" in item ? item.role : null}
                 </h4>
                 {"degree" in item && (
-                  <h4 className="text-lg font-bold">{item.degree}</h4>
+                  <h4 className="text-base font-bold">{item.degree}</h4>
                 )}
               </>
 
-              <p className="mb-2 text-xxs">
+              <p className="mb-2 text-sm">
                 {"company" in item ? item.company : item.school}
               </p>
 
               <div className="flex items-center gap-2">
                 <Calendar size={16.5} />
-                <p className="text-xxs">{item.period}</p>
+                <p className="text-sm">{item.period}</p>
               </div>
             </div>
           </div>
