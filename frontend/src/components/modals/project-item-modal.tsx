@@ -10,12 +10,11 @@ import {
 import Tool from "@/components/tool";
 import SubHeading from "@/components/sub-heading";
 import List from "@/components/ui/list";
+import ProjectCarousel from "@/components/project-carousel";
 
 import useProjectModalStore from "@/hooks/use-project-modal";
 
 import { projects } from "@/lib/data";
-
-import Demo from "../../assets/project-demo.png";
 
 export default function ProjectItemModal() {
   const isOpen = useProjectModalStore((state) => state.isOpen);
@@ -50,11 +49,11 @@ export default function ProjectItemModal() {
           </DialogDescription>
         </DialogHeader>
 
-        <img
-          src={Demo ?? project?.image}
-          alt={project?.name}
-          className="block w-full"
-        />
+        {project?.imageList?.length ? (
+          <section className="mx-auto">
+            <ProjectCarousel images={project?.imageList} />
+          </section>
+        ) : null}
 
         <section>
           <SubHeading title="Project Requirements" />
