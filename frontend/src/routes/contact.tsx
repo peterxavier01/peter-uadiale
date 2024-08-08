@@ -1,3 +1,4 @@
+import { m } from "framer-motion";
 import { createFileRoute } from "@tanstack/react-router";
 
 import Heading from "@/components/heading";
@@ -5,6 +6,7 @@ import ContactCard from "@/components/contact-card";
 import ContactForm from "@/components/contact-form";
 
 import { contactData } from "@/lib/data";
+import { fadeInUpVariants } from "@/lib/animations";
 
 export const Route = createFileRoute("/contact")({
   component: ContactPage,
@@ -21,9 +23,16 @@ function ContactPage() {
         ))}
       </section>
 
-      <section className="mt-[72px]">
+      <m.section
+        className="mt-[72px]"
+        variants={fadeInUpVariants}
+        initial="initial"
+        whileInView="animate"
+        exit="exit"
+        viewport={{ once: true }}
+      >
         <ContactForm />
-      </section>
+      </m.section>
     </main>
   );
 }

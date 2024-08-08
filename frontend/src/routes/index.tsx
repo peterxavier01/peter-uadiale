@@ -1,10 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import Typewriter from "typewriter-effect";
+import { m } from "framer-motion";
 
 import { Button } from "@/components/ui/button";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 
 import { socialIcons } from "@/lib/data";
+import {
+  fadeInRightVariants,
+  iconContainerVariants,
+  iconItemVariants,
+} from "@/lib/animations";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
@@ -30,7 +36,10 @@ const HeroBtnData: HeroBtnDataProps[] = [
 function HomePage() {
   return (
     <main className="grid min-h-dvh place-items-center gap-8 font-montserrat md:min-h-[calc(100dvh-99px)] md:grid-cols-12">
-      <div className="z-10 aspect-auto md:col-span-8">
+      <m.div
+        className="z-10 aspect-auto md:col-span-8"
+        {...fadeInRightVariants}
+      >
         <p className="text-xxs font-medium uppercase lg:text-paragraph">
           Hello
         </p>
@@ -73,24 +82,32 @@ function HomePage() {
             </Link>
           ))}
         </div>
-      </div>
+      </m.div>
 
-      <div className="z-10 flex w-full gap-[51px] md:col-span-4 md:ml-auto md:w-max md:flex-col">
+      <m.div
+        className="z-10 flex w-full gap-[51px] md:col-span-4 md:ml-auto md:w-max md:flex-col"
+        variants={iconContainerVariants}
+        animate="animate"
+        initial="initial"
+        exit="exit"
+      >
         {socialIcons.map((item) => {
           const Icon = item.icon;
 
           return (
-            <Link
-              to={item.href}
-              key={item.id}
-              target="_blank"
-              title={item.name}
-            >
-              <Icon fill="var(--off-white)" className="social-icon" />
-            </Link>
+            <m.div variants={iconItemVariants}>
+              <Link
+                to={item.href}
+                key={item.id}
+                target="_blank"
+                title={item.name}
+              >
+                <Icon fill="var(--off-white)" className="social-icon" />
+              </Link>
+            </m.div>
           );
         })}
-      </div>
+      </m.div>
 
       <BackgroundBeams />
     </main>

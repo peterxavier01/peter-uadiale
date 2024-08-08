@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
+import { m } from "framer-motion";
 
 import Heading from "@/components/heading";
 import SkillCard from "@/components/skill-card";
@@ -11,6 +12,13 @@ import Work from "../assets/icon-briefcase.svg";
 import Education from "../assets/icon-school.svg";
 
 import { education, experiences, services, skills } from "@/lib/data";
+import {
+  cardContainerVariants,
+  fadeInUpVariants,
+  fadeInRightVariants,
+  fadeInVariants,
+  springInLeftVariants,
+} from "@/lib/animations";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -20,7 +28,14 @@ function AboutPage() {
   return (
     <main className="my-8 min-h-[calc(100dvh-99px)] font-montserrat md:my-16">
       <section className="grid gap-6 space-y-7 lg:grid-cols-12">
-        <div className="lg:col-span-8">
+        <m.div
+          className="lg:col-span-8"
+          variants={fadeInRightVariants}
+          initial="initial"
+          exit="exit"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
           <Heading title="About Me" className="mb-8" />
 
           <div className="space-y-4 text-xxs leading-7">
@@ -57,16 +72,30 @@ function AboutPage() {
             </p>
             <p>Fun fact: I enjoy playing chess, video games, and traveling.</p>
           </div>
-        </div>
+        </m.div>
 
-        <div className="flex h-max flex-wrap items-center gap-6 lg:col-span-4">
+        <m.div
+          className="flex h-max flex-wrap items-center gap-6 lg:col-span-4"
+          variants={fadeInUpVariants}
+          initial="initial"
+          exit="exit"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
           {skills.map((skill) => (
             <SkillCard key={skill.id} skill={skill} />
           ))}
-        </div>
+        </m.div>
       </section>
 
-      <section className="mx-auto mt-24 grid max-w-[900px] gap-8 md:grid-cols-2">
+      <m.section
+        className="mx-auto mt-24 grid max-w-[900px] gap-8 md:grid-cols-2"
+        variants={fadeInVariants}
+        whileInView="animate"
+        initial="initial"
+        exit="exit"
+        viewport={{ once: true }}
+      >
         <div>
           <Heading title="Experience" />
           <Timeline data={experiences} src={Work} />
@@ -76,24 +105,39 @@ function AboutPage() {
           <Heading title="Education" />
           <Timeline data={education} src={Education} />
         </div>
-      </section>
+      </m.section>
 
       <section className="mt-24">
         <Heading title="My Services" className="text-left md:text-center" />
 
-        <div className="mt-12 grid gap-7 md:grid-cols-2 xl:grid-cols-4">
+        <m.div
+          className="mt-12 grid gap-7 md:grid-cols-2 xl:grid-cols-4"
+          variants={cardContainerVariants}
+          initial="initial"
+          whileInView="animate"
+          exit="exit"
+          viewport={{ once: true }}
+        >
           {services.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}
-        </div>
+        </m.div>
 
         <div className="mt-12 flex justify-end">
-          <Link to="/contact">
-            <Button variant="accent" className="min-h-16 min-w-60 rounded-sm">
-              Contact Me
-              <ArrowRight className="ml-2" />
-            </Button>
-          </Link>
+          <m.div
+            variants={springInLeftVariants}
+            initial="initial"
+            whileInView="animate"
+            exit="exit"
+            viewport={{ once: true }}
+          >
+            <Link to="/contact">
+              <Button variant="accent" className="min-h-16 min-w-60 rounded-sm">
+                Contact Me
+                <ArrowRight className="ml-2" />
+              </Button>
+            </Link>
+          </m.div>
         </div>
       </section>
     </main>

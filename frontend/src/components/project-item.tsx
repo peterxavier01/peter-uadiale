@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ChevronDown } from "lucide-react";
+import { m } from "framer-motion";
 
 import { Button } from "@/components/ui/button";
 import Github from "@/components/icons/github";
@@ -8,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import Tool from "@/components/tool";
 
 import { projects } from "@/lib/data";
+import { fadeInLeftVariants, fadeInRightVariants } from "@/lib/animations";
 
 import useProjectModalStore from "@/hooks/use-project-modal";
 
@@ -29,11 +31,23 @@ export default function ProjectItem({ project }: ProjectItemProps) {
 
   return (
     <div className="project-item grid items-center gap-16 md:grid-cols-2">
-      <div>
+      <m.div
+        variants={fadeInRightVariants}
+        initial="initial"
+        whileInView="animate"
+        exit="exit"
+        viewport={{ once: true }}
+      >
         <img src={project.image || Demo} alt={project.name} />
-      </div>
+      </m.div>
 
-      <div>
+      <m.div
+        variants={fadeInLeftVariants}
+        initial="initial"
+        whileInView="animate"
+        exit="exit"
+        viewport={{ once: true }}
+      >
         <div className="flex items-center gap-4">
           <h3 className="mb-4 text-h5 font-bold md:text-h4">{project.name}</h3>
           <Badge variant="project" className="text-center">
@@ -98,7 +112,7 @@ export default function ProjectItem({ project }: ProjectItemProps) {
             </Link>
           </div>
         </div>
-      </div>
+      </m.div>
     </div>
   );
 }
