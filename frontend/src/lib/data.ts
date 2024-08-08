@@ -44,6 +44,22 @@ import PerformanceIcon from "../components/icons/performance";
 import Email from "@/components/icons/email";
 import Location from "@/components/icons/location";
 
+// Project Images
+import StyleVault from "../assets/style-vault.png";
+import StyleVault1 from "../assets/project-images/style-vault-2.png";
+import StyleVault2 from "../assets/project-images/style-vault.png";
+import StyleVault3 from "../assets/project-images/style-vault-metrics.png";
+
+import RealHome from "../assets/realhome-4.png";
+import RealHome1 from "../assets/project-images/realhome-2.png";
+import RealHome2 from "../assets/project-images/realhome.png";
+
+import OtterStream from "../assets/otterstream-2.png";
+import OtterStream1 from "../assets/project-images/otterstream.png";
+import OtterStream2 from "../assets/project-images/otterstream-2.png";
+
+import { fadeInLeftVariants, fadeInRightVariants } from "./animations";
+
 export const navLinks = [
   { id: 1, name: "Home", href: "/" },
   { id: 2, name: "About", href: "/about" },
@@ -171,8 +187,20 @@ export const services = [
 ];
 
 export const contactData = [
-  { id: 1, title: "Email", content: "uadialepeter@gmail.com", icon: Email },
-  { id: 2, title: "Location", content: "Lagos, Nigeria", icon: Location },
+  {
+    id: 1,
+    title: "Email",
+    content: "uadialepeter@gmail.com",
+    icon: Email,
+    animationVariant: fadeInRightVariants,
+  },
+  {
+    id: 2,
+    title: "Location",
+    content: "Lagos, Nigeria",
+    icon: Location,
+    animationVariant: fadeInLeftVariants,
+  },
 ];
 
 export const testimonials = [
@@ -209,7 +237,8 @@ export const testimonials = [
 export const projects = [
   {
     id: 1,
-    image: "",
+    image: StyleVault,
+    imageList: [StyleVault1, StyleVault2, StyleVault3],
     name: "Style Vault",
     category: "Ecommerce",
     description:
@@ -248,7 +277,8 @@ export const projects = [
   },
   {
     id: 2,
-    image: "",
+    image: RealHome,
+    imageList: [RealHome1, RealHome2],
     name: "RealHome",
     category: "Web App",
     description:
@@ -319,7 +349,8 @@ export const projects = [
   },
   {
     id: 4,
-    image: "",
+    image: OtterStream,
+    imageList: [OtterStream1, OtterStream2],
     name: "Otter Stream",
     category: "Web App",
     description:
