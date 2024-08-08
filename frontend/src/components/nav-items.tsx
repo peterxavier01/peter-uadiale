@@ -15,7 +15,7 @@ export default function NavItems({ setOpen }: NavItemsProps) {
           className="list-none font-montserrat text-sm uppercase lg:text-xxs"
           onClick={() => (setOpen ? setOpen(false) : null)}
         >
-          <Link to={link.href}>
+          <Link to={link.href} activeOptions={{ exact: true }}>
             {({ isActive }) => {
               return (
                 <p
