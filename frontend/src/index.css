@@ -88,9 +88,7 @@ body {
           order: 2;
         }
       }
-    }
 
-    &:nth-child(even) {
       &>div:nth-of-type(2) {
         @media (width > 768px) {
           order: 1;
@@ -135,7 +133,7 @@ body {
   width: 2px;
   height: 50%;
   top: 100%;
-  margin-block: 10px;
+  margin-top: 10px;
 }
 
 ::selection {
