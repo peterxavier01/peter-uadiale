@@ -1,5 +1,3 @@
-import { useCallback, useEffect, useState } from "react";
-
 import {
   Dialog,
   DialogContent,
@@ -20,16 +18,12 @@ export default function ProjectItemModal() {
   const isOpen = useProjectModalStore((state) => state.isOpen);
   const onClose = useProjectModalStore((state) => state.onClose);
   const projectId = useProjectModalStore((state) => state.projectId);
-  const [project, setProject] = useState<(typeof projects)[0]>();
 
-  const getProjectById = useCallback(() => {
-    const project = projects.find((project) => project.id === projectId);
-    setProject(project);
-  }, [projectId]);
+  const getProjectById = (projectId: number) => {
+    return projects.find((project) => project.id === projectId);
+  };
 
-  useEffect(() => {
-    getProjectById();
-  }, [getProjectById]);
+  const project = getProjectById(projectId);
 
   const onChange = (open: boolean) => {
     if (!open) {
