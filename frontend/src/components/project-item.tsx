@@ -24,9 +24,17 @@ export default function ProjectItem({ project }: ProjectItemProps) {
   const setProjectId = useProjectModalStore((state) => state.setProjecId);
 
   // Get project id from data-project-id attribute and set it to the store
-  const handleClick = (event: React.MouseEvent<HTMLSpanElement>) => {
-    const projectId = (event.target as HTMLSpanElement).dataset.projectId;
-    setProjectId(Number(projectId));
+  const handleClick = (
+    event: React.MouseEvent<HTMLDivElement | SVGElement>,
+  ) => {
+    const target = event.target as HTMLElement;
+    const projectId = target
+      .closest("[data-project-id]")
+      ?.getAttribute("data-project-id");
+    if (projectId) {
+      setProjectId(Number(projectId));
+      onOpen();
+    }
   };
 
   return (
@@ -58,16 +66,14 @@ export default function ProjectItem({ project }: ProjectItemProps) {
         <p className="text-xxs">{project.description}</p>
         <div
           className="mt-2 flex cursor-pointer items-center gap-1 text-golden-yellow"
-          onClick={onOpen}
+          // onClick={onOpen}
+          data-project-id={project.id}
+          onClick={handleClick}
         >
-          <span
-            className="text-xxs font-medium"
-            data-project-id={project.id}
-            onClick={handleClick}
-          >
+          <span className="flex items-center gap-1 text-xxs font-medium">
             See more
+            <ChevronDown />
           </span>
-          <ChevronDown />
         </div>
 
         <div className="mt-8">
