@@ -30,9 +30,14 @@ export default function ContactForm() {
 
   const { toast } = useToast();
 
+  const sendEmailUrl =
+    process.env.NODE_ENV === "production"
+      ? "https://peter-uadiale.onrender.com/send-email"
+      : "http://localhost:3000/send-email";
+
   const onSubmit = async (data: IFormValues) => {
     try {
-      const response = await axios.post("http://localhost:3000/send-email", {
+      const response = await axios.post(sendEmailUrl, {
         email: data.email,
         subject: data.subject,
         message: data.message,
