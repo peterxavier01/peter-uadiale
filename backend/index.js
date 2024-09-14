@@ -12,6 +12,7 @@ app.use(cors());
 
 app.use(express.json());
 
+// Endpoint to send email via Resend
 app.post("/send-email", async (req, res) => {
   const { email, subject, message } = req.body;
 
