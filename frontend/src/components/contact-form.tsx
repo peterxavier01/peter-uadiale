@@ -30,10 +30,13 @@ export default function ContactForm() {
 
   const { toast } = useToast();
 
-  const sendEmailUrl =
-    process.env.NODE_ENV === "production"
-      ? "https://peter-uadiale.onrender.com/send-email"
-      : "http://localhost:3000/send-email";
+  let sendEmailUrl: string;
+
+  if (import.meta.env.DEV) {
+    sendEmailUrl = import.meta.env.VITE_EMAIL_API_DEV_URL;
+  } else if (import.meta.env.PROD) {
+    sendEmailUrl = import.meta.env.VITE_EMAIL_API_PROD_URL;
+  }
 
   const onSubmit = async (data: IFormValues) => {
     try {
