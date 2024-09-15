@@ -42,6 +42,7 @@ export default function ContactForm() {
   const onSubmit = async (data: IFormValues) => {
     try {
       const response = await axios.post(sendEmailUrl, {
+        name: data.fullName,
         email: data.email,
         subject: data.subject,
         message: data.message,
