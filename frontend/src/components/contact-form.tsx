@@ -19,6 +19,7 @@ export default function ContactForm() {
     register,
     formState: { errors },
     handleSubmit,
+    reset,
   } = useForm<IFormValues>({
     defaultValues: {
       fullName: "",
@@ -49,6 +50,8 @@ export default function ContactForm() {
       toast({
         description: "Your message has been sent successfully.",
       });
+
+      reset();
 
       return response.data;
     } catch (error) {
