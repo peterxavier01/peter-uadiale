@@ -60,6 +60,9 @@ export default function ContactForm() {
         description:
           "There was an error sending your message. Please try again.",
       });
+    } finally {
+      // Reset the form fields after submission
+      reset();
     }
   };
 
