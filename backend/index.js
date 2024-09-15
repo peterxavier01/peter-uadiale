@@ -17,8 +17,8 @@ app.post("/send-email", async (req, res) => {
   const { email, subject, message } = req.body;
 
   const { data, error } = await resend.emails.send({
-    from: email,
-    to: ["uadialepeter@gmail.com"],
+    from: "info@peteruadiale.com",
+    to: email,
     subject,
     html: message,
   });
