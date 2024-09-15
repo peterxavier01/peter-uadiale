@@ -17,7 +17,7 @@ app.post("/send-email", async (req, res) => {
   const { fullName, email, subject, message } = req.body;
 
   const { data, error } = await resend.emails.send({
-    from: "info@peteruadiale.com",
+    from: "Peter's Portfolio <info@peteruadiale.com>",
     to: "uadialepeter@gmail.com",
     subject,
     html: `Email submission from ${fullName} with email: ${email}. <br > ${message}`,
