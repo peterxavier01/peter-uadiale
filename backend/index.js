@@ -14,13 +14,13 @@ app.use(express.json());
 
 // Endpoint to send email via Resend
 app.post("/send-email", async (req, res) => {
-  const { fullName, email, subject, message } = req.body;
+  const { name, email, subject, message } = req.body;
 
   const { data, error } = await resend.emails.send({
     from: "Peter's Portfolio <info@peteruadiale.com>",
     to: "uadialepeter@gmail.com",
     subject,
-    html: `Email submission from ${fullName} with email: ${email}. <br > ${message}`,
+    html: `Email submission from ${name} with email: ${email}. <br > ${message}`,
   });
 
   if (error) {
