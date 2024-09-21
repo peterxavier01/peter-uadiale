@@ -11,22 +11,24 @@ function getCurrentYear() {
 
 export default function Footer() {
   return (
-    <footer className="wrapper flex min-h-24 flex-wrap items-center justify-between gap-8 bg-charcoal py-6">
-      <Link to="/" className="h-[36px] w-[99px]">
-        <img src={Logo} alt="logo" className="block w-full" />
-      </Link>
+    <footer className="bg-charcoal">
+      <div className="wrapper mx-auto flex min-h-24 max-w-screen-xl flex-wrap items-center justify-between gap-8 py-6">
+        <Link to="/" className="h-[36px] w-[99px]">
+          <img src={Logo} alt="logo" className="block w-full" />
+        </Link>
 
-      <section>
-        <p>© {getCurrentYear()} Peter Uadiale | All Rights Reserved</p>
-      </section>
+        <section>
+          <p>© {getCurrentYear()} Peter Uadiale | All Rights Reserved</p>
+        </section>
 
-      <section className="flex items-center gap-8">
-        {socialIcons.map((icon) => (
-          <Link to={icon.href} key={icon.id} title={icon.name}>
-            <icon.icon fill="var(--off-white)" className="h-6 w-6" />
-          </Link>
-        ))}
-      </section>
+        <section className="flex items-center gap-8">
+          {socialIcons.map((icon) => (
+            <Link to={icon.href} key={icon.id} title={icon.name}>
+              <icon.icon fill="var(--off-white)" className="h-6 w-6" />
+            </Link>
+          ))}
+        </section>
+      </div>
     </footer>
   );
 }

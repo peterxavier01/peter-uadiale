@@ -8,7 +8,7 @@ import Logo from "../assets/Logo.svg";
 
 export default function Navbar() {
   return (
-    <header className="wrapper relative z-10 flex items-center justify-between py-6">
+    <header className="wrapper relative z-10 flex items-center justify-between py-6 max-w-screen-xl mx-auto">
       <Link to="/" className="mr-4 flex-shrink-0">
         <img src={Logo} alt="Logo" className="block h-[36px] w-[99px]" />
       </Link>

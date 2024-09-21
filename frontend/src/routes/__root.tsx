@@ -17,7 +17,7 @@ const Root = () => {
     <div className="relative min-h-screen bg-dark-brown text-off-white">
       <Navbar />
 
-      <div className="wrapper overflow-hidden">
+      <div className="wrapper overflow-hidden max-w-screen-xl mx-auto">
         <AnimatePresence mode="wait">
           <AnimatedOutlet key={nextMatch.id} />
         </AnimatePresence>
