@@ -2,7 +2,6 @@
 import Github from "../assets/icon-github.svg";
 import GithubIcon from "../components/icons/github";
 import TwitterXIcon from "../components/icons/twitter-x";
-import InstagramIcon from "../components/icons/instagram";
 import LinkedinIcon from "../components/icons/linkedin";
 
 // Skill Icons
@@ -88,12 +87,6 @@ export const socialIcons = [
   },
   {
     id: 3,
-    name: "Instagram",
-    icon: InstagramIcon,
-    href: "https://www.instagram.com/peter_xavier__/",
-  },
-  {
-    id: 4,
     name: "Linkedin",
     icon: LinkedinIcon,
     href: "https://www.linkedin.com/in/peter-o-uadiale-69541a19a/",
