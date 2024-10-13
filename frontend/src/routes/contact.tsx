@@ -27,7 +27,7 @@ function ContactPage() {
         className="mt-[72px]"
         variants={fadeInUpVariants}
         initial="initial"
-        whileInView="animate"
+        animate="animate"
         exit="exit"
         viewport={{ once: true }}
       >
