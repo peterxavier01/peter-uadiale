@@ -31,13 +31,9 @@ export default function ContactForm() {
 
   const { toast } = useToast();
 
-  let sendEmailUrl: string;
+  
 
-  if (import.meta.env.DEV) {
-    sendEmailUrl = import.meta.env.VITE_EMAIL_API_DEV_URL;
-  } else if (import.meta.env.PROD) {
-    sendEmailUrl = import.meta.env.VITE_EMAIL_API_PROD_URL;
-  }
+  const sendEmailUrl = import.meta.env.VITE_EMAIL_API_URL;
 
   const onSubmit = async (data: IFormValues) => {
     try {
