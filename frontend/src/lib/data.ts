@@ -58,13 +58,18 @@ import OtterStream from "../assets/otterstream-2.png";
 import OtterStream1 from "../assets/project-images/otterstream.png";
 import OtterStream2 from "../assets/project-images/otterstream-2.png";
 
+import Brainy from "../assets/project-images/brainy.png";
+import Brainy1 from "../assets/project-images/brainy-02.png";
+import Brainy2 from "../assets/project-images/brainy-03.png";
+import Brainy3 from "../assets/project-images/brainy-04.png";
+
 import { fadeInLeftVariants, fadeInRightVariants } from "./animations";
 
 export const navLinks = [
   { id: 1, name: "Home", href: "/" },
   { id: 2, name: "About", href: "/about" },
   { id: 3, name: "Projects", href: "/projects" },
-  { id: 4, name: "Testimonials", href: "/testimonials" },
+  // { id: 4, name: "Testimonials", href: "/testimonials" },
   { id: 5, name: "Contact", href: "/contact" },
 ];
 
@@ -322,7 +327,8 @@ export const projects = [
   },
   {
     id: 3,
-    image: "",
+    image: Brainy,
+    imageList: [Brainy1, Brainy2, Brainy3],
     name: "Brainy",
     category: "AI",
     description:
@@ -344,7 +350,7 @@ export const projects = [
       { id: 11, name: "Zod" },
       { id: 12, name: "Zustand" },
     ],
-    live_preview_url: "https://next13-5-ai-saas.vercel.app/",
+    live_preview_url: "https://brainwiseai.vercel.app",
     github_repo_url: "https://github.com/peterxavier01/next-ai-saas",
   },
   {
