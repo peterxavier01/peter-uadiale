@@ -101,7 +101,7 @@ export default function ContactForm() {
 
         <div className="w-full">
           <input
-            type="text"
+            type="email"
             placeholder="Email address"
             className={cn(
               inputStyles,
