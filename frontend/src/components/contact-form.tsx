@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
@@ -15,6 +16,7 @@ interface IFormValues {
 }
 
 export default function ContactForm() {
+  const [isLoading, setIsLoading] = useState(false);
   const {
     register,
     formState: { errors },
@@ -31,18 +33,20 @@ export default function ContactForm() {
 
   const { toast } = useToast();
 
-  
-
   const sendEmailUrl = import.meta.env.VITE_EMAIL_API_URL;
 
   const onSubmit = async (data: IFormValues) => {
     try {
+      setIsLoading(true);
+
       const response = await axios.post(sendEmailUrl, {
         name: data.fullName,
         email: data.email,
         subject: data.subject,
         message: data.message,
       });
+
+      setIsLoading(false);
 
       toast({
         description: "Your message has been sent successfully.",
@@ -58,8 +62,8 @@ export default function ContactForm() {
           "There was an error sending your message. Please try again.",
       });
     } finally {
-      // Reset the form fields after submission
-      reset();
+      setIsLoading(false);
+      reset(); // Reset the form fields after submission
     }
   };
 
@@ -135,10 +139,13 @@ export default function ContactForm() {
 
       <Button
         variant="accent"
-        className="mt-4 h-[51px] w-full max-w-[247px] uppercase"
+        className={cn(
+          "mt-4 h-[51px] w-full max-w-[247px] uppercase",
+          isLoading ? "opacity-60" : "",
+        )}
         type="submit"
       >
-        Send
+        {isLoading ? "Sending..." : "Send"}
       </Button>
     </form>
   );
