@@ -19,7 +19,7 @@ export default function Navbar() {
             <NavItems />
           </div>
 
-          <a href="src/assets/Uadiale_Peter_Resume.pdf" download>
+          <a href="/Uadiale_Peter_Resume.pdf" download>
             <Button
               variant="accent"
               className="hidden h-[51px] uppercase md:block"
