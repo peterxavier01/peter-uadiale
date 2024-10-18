@@ -19,7 +19,7 @@ export default function ProjectCarousel({ images }: ProjectCarouselProps) {
           <CarouselItem key={index}>
             <div className="p-1">
               <Card>
-                <CardContent className="flex aspect-auto items-center justify-center p-6">
+                <CardContent className="flex aspect-auto items-center justify-center p-4">
                   <img src={image} alt="portfolio project screenshot" />
                 </CardContent>
               </Card>
