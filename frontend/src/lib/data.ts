@@ -44,10 +44,10 @@ import Email from "@/components/icons/email";
 import Location from "@/components/icons/location";
 
 // Project Images
-// import StyleVault from "../assets/style-vault.png";
-// import StyleVault1 from "../assets/project-images/style-vault-2.png";
-// import StyleVault2 from "../assets/project-images/style-vault.png";
-// import StyleVault3 from "../assets/project-images/style-vault-metrics.png";
+import StyleVault from "../assets/style-vault.png";
+import StyleVault1 from "../assets/project-images/style-vault-2.png";
+import StyleVault2 from "../assets/project-images/style-vault.png";
+import StyleVault3 from "../assets/project-images/style-vault-metrics.png";
 
 import RealHome from "../assets/realhome-4.png";
 import RealHome1 from "../assets/project-images/realhome-2.png";
@@ -241,46 +241,45 @@ export const testimonials = [
 ];
 
 export const projects = [
-  // {
-  //   id: 1,
-  //   image: StyleVault,
-  //   imageList: [StyleVault1, StyleVault2, StyleVault3],
-  //   name: "Style Vault",
-  //   category: "Ecommerce",
-  //   description:
-  //     "Style Vault is an e-commerce website project designed to offer a seamless shopping experience for clothes, shoes, and accessories for both men and women. This project leverages cutting-edge technologies to deliver a dynamic, responsive, and user-friendly platform.",
-  //   project_requirements: [
-  //     "Responsive website layout: The user should be able to view the optimal layout of the website depending on their device",
-  //     "Product catalog: To create a dynamic product catalog that is filterable by the user.",
-  //     "Shopping cart and checkout: Integrating a shopping cart and checkout system to facilitate the purchase process.",
-  //     "Payment gateway integration: To enable secure and convenient payment methods for users.",
-  //     "Dark mode support: To provide users the choice to use either a dark mode or light mode theme (defaults to system).",
-  //     "Payment gateway integration: To enable users to make purchases using various payment methods.",
-  //     "Search functionality: To allow users to search for products easily.",
-  //   ],
-  //   approach: [
-  //     "Component-based development: I used a component-based approach to build reusable and modular components for the website with React.",
-  //     "Mobile-first design: I followed a mobile-first design approach to ensure the website is optimized for mobile devices and provides a seamless experience on larger screens.",
-  //     "Headless CMS integration: I integrated a headless CMS (Commerce.js) to manage the product catalog, allowing for easy updates and modifications.",
-  //     "API-driven devlopment: I utilized the Commerce.js API to fetch product data, manage the shopping cart, and handle the checkout process.",
-  //     "Payment gateway solution: I implemented a payment gateway solution to enable users to make purchases for products by integrating the Paystack API.",
-  //   ],
-  //   challenges: [
-  //     "Performance optimization: I ensured the website loads quickly and efficiently. This involved optimizing images, implementing lazy loading, and using caching techniques.",
-  //     "User Experience (UX) design: I focused on creating an intuitive, minimalistic and user-friendly interface, ensuring that users can easily navigate the website and find the products they need.",
-  //     "Commerce.js CMS: I faced challenges in integrating the Commerce.js API into the project. This was because the latest version of Commerce.js used in this project was incompatible with Next 14 at the time of making this project, so I could not use features like server actions to reduce client JS and I also ran into other errors. To rectify this, I had to downgrade Next.js to version 13.5.3.",
-  //   ],
-  //   tools: [
-  //     { id: 1, icon: Next, name: "Next.js" },
-  //     { id: 2, icon: Framer, name: "Framer Motion" },
-  //     { id: 3, icon: Typescript, name: "Typescript" },
-  //     { id: 4, icon: Tailwind, name: "Tailwind" },
-  //     { id: 5, name: "Paystack" },
-  //     { id: 6, name: "Commerce.js" },
-  //   ],
-  //   live_preview_url: "https://style-vault.vercel.app/",
-  //   github_repo_url: "https://github.com/peterxavier01/style-vault",
-  // },
+  {
+    id: 1,
+    image: StyleVault,
+    imageList: [StyleVault1, StyleVault2, StyleVault3],
+    name: "Style Vault",
+    category: "Ecommerce",
+    description:
+      "Style Vault is an e-commerce website project designed to offer a seamless shopping experience for clothes, shoes, and accessories for both men and women. This project leverages cutting-edge technologies to deliver a dynamic, responsive, and user-friendly platform.",
+    project_requirements: [
+      "Responsive website layout: The user should be able to view the optimal layout of the website depending on their device",
+      "Product catalog: To create a dynamic product catalog that is filterable by the user.",
+      "Shopping cart and checkout: Integrating a shopping cart and checkout system to facilitate the purchase process.",
+      "Payment gateway integration: To enable secure and convenient payment methods for users.",
+      "Dark mode support: To provide users the choice to use either a dark mode or light mode theme (defaults to system).",
+      "Search functionality: To allow users to search for products easily.",
+    ],
+    approach: [
+      "Component-based development: I used a component-based approach to build reusable and modular components for the website with React.",
+      "Mobile-first design: I followed a mobile-first design approach to ensure the website is optimized for mobile devices and provides a seamless experience on larger screens.",
+      "Headless CMS integration: I integrated a headless CMS (Sanity.io) to manage the product catalog, allowing for easy updates and modifications.",
+      "API-driven devlopment: I utilized the Sanity CMS API to fetch product data, manage the shopping cart, and handle the checkout process.",
+      "Payment gateway solution: I implemented a payment gateway solution to enable users to make purchases for products by integrating the Paystack API.",
+    ],
+    challenges: [
+      "Performance optimization: I ensured the website loads quickly and efficiently. This involved optimizing images, implementing lazy loading, utilizing rendering strategies and using caching techniques.",
+      "User Experience (UX) design: I focused on creating an intuitive, minimalistic and user-friendly interface, ensuring that users can easily navigate the website and find the products they need.",
+      "Sanity CMS: I faced some challenges in integrating the Sanity CMS API into the project. This was due to the fact that I was relatively new to the ecosystem, so I had to peruse the docs to find solutions to various bugs I ran into.",
+    ],
+    tools: [
+      { id: 1, icon: Next, name: "Next.js" },
+      { id: 2, icon: Framer, name: "Framer Motion" },
+      { id: 3, icon: Typescript, name: "Typescript" },
+      { id: 4, icon: Tailwind, name: "Tailwind" },
+      { id: 5, name: "Paystack" },
+      { id: 6, name: "Sanity CMS" },
+    ],
+    live_preview_url: "https://style-vault.vercel.app/",
+    github_repo_url: "https://github.com/peterxavier01/style-vault",
+  },
   {
     id: 2,
     image: RealHome,
@@ -361,23 +360,54 @@ export const projects = [
   },
   {
     id: 4,
+    image: SoundWave,
+    imageList: [SoundWave, SoundWave1],
+    name: "SoundWave",
+    category: "Web App",
+    description: "SoundWave is a music player web app that allows users to listen to their favorite songs, create playlists, and search for songs.",
+    project_requirements: [
+      "Users should be able to view the optimal layout of the app depending on their device.",
+      "Users should be able to create an account to personalize experience.",
+      "Users should be able to search for songs.",
+      "Users should be able to add any song to their playlist",
+      "User should be able to subscribe to service and manage their subscriptions.",
+    ],
+    approach: ["Mobile-first design", "Component-based development", "Supabase Integration for managing songs data, authentication and authorization.", "Stripe Integration for subscription management"],
+    challenges: [
+      "Supabase Integration: It was quite tricky working with Supabase as I had just transitioned from Firebase (NoSql to SQL). The major struggle was dealing with errors that arose from implementing RLS (Row Level Access) to the Supabase tables.",
+      "Stripe Integration: I had to go through the Stripe docs to figure out how to integrate it with Next.js. I also had to figure out how to manage subscriptions and handle webhooks.",
+    ],
+    tools: [
+      { id: 1, icon: Next, name: "Next.js" },
+      { id: 2, name: "Supabase" },
+      { id: 3, name: "TypeScript" },
+      { id: 4, name: "Tailwind CSS" },
+      { id: 5, name: "React Hook Form" },
+      { id: 7, name: "Stripe" },
+      { id: 6, name: "Zustand" },
+    ],
+    live_preview_url: "https://soundwave-alpha.vercel.app",
+    github_repo_url: "https://github.com/peterxavier01/spotify-clone-v1",
+  },
+  {
+    id: 5,
     image: Portfolio,
     imageList: [Portfolio2, Portfolio3, Portfolio4],
     name: "Portfolio",
     category: "Web",
     description: "This portfolio integrates a clean and minimalistic UI to showcase my frontend development projects.",
     project_requirements: [
-      "The website should have a responsive layout", 
-      "The website should incorporate subtle animations", 
-      "Potential clients should be able to send messages/emails via the contact form", 
+      "The website should have a responsive layout",
+      "The website should incorporate subtle animations",
+      "Potential clients should be able to send messages/emails via the contact form",
       "The website should show a list of my projects",
       "The projects should contain links to the live preview and the respective GitHub repositories."
     ],
     approach: [
-      "Mobile-first design", 
-      "Component-based development", 
-      "Framer Motion Integration for animations", 
-      "Resend Integration for contact form", 
+      "Mobile-first design",
+      "Component-based development",
+      "Framer Motion Integration for animations",
+      "Resend Integration for contact form",
     ],
     challenges: [
       "Integrating Resend for contact form: This was a first working with Resend as an email soluion. I integrated Resend on the Node.js server. Resend requires an active domain which I had to purchase, and then set up the necessary SPF, DKIM, and DMARC records to ensure email deliverability.",
@@ -395,36 +425,5 @@ export const projects = [
     ],
     live_preview_url: "https://www.peteruadiale.com",
     github_repo_url: "https://github.com/peterxavier01/peter-uadiale",
-  },
-  {
-    id: 5,
-    image: SoundWave,
-    imageList: [SoundWave, SoundWave1],
-    name: "SoundWave",
-    category: "Web App",
-    description: "SoundWave is a music player web app that allows users to listen to their favorite songs, create playlists, and search for songs.",
-    project_requirements: [
-      "Users should be able to view the optimal layout of the app depending on their device.", 
-      "Users should be able to create an account to personalize experience.", 
-      "Users should be able to search for songs.",
-      "Users should be able to add any song to their playlist",
-      "User should be able to subscribe to service and manage their subscriptions.",
-    ],
-    approach: ["Mobile-first design", "Component-based development", "Supabase Integration for managing songs data, authentication and authorization.", "Stripe Integration for subscription management"],
-    challenges: [
-      "Supabase Integration: It was quite tricky working with Supabase as I had just transitioned from Firebase (NoSql to SQL). The major struggle was dealing with errors that arose from implementing RLS (Row Level Access) to the Supabase tables.", 
-      "Stripe Integration: I had to go through the Stripe docs to figure out how to integrate it with Next.js. I also had to figure out how to manage subscriptions and handle webhooks.",
-    ],
-    tools: [
-      { id: 1, icon: Next, name: "Next.js" },
-      { id: 2, name: "Supabase" },
-      { id: 3, name: "TypeScript" },
-      { id: 4, name: "Tailwind CSS" },
-      { id: 5, name: "React Hook Form" },
-      { id: 7, name: "Stripe" },
-      { id: 6, name: "Zustand" },
-    ],
-    live_preview_url: "https://soundwave-alpha.vercel.app",
-    github_repo_url: "https://github.com/peterxavier01/spotify-clone-v1",
   },
 ];
