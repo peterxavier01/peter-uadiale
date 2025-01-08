@@ -35,7 +35,7 @@ const HeroBtnData: HeroBtnDataProps[] = [
 
 function HomePage() {
   return (
-    <main className="grid min-h-dvh place-items-center gap-8 font-montserrat md:min-h-[calc(100dvh-99px)] md:grid-cols-12">
+    <main className="grid min-h-[calc(100dvh-88px)] place-items-center gap-8 font-montserrat md:min-h-[calc(100dvh-99px)] md:grid-cols-12">
       <m.div
         className="z-10 aspect-auto md:col-span-8"
         {...fadeInRightVariants}
@@ -85,7 +85,7 @@ function HomePage() {
       </m.div>
 
       <m.div
-        className="z-10 flex w-full gap-[51px] md:col-span-4 md:ml-auto md:w-max md:flex-col"
+        className="z-10 hidden w-full gap-[51px] md:col-span-4 md:ml-auto md:flex md:w-max md:flex-col"
         variants={iconContainerVariants}
         animate="animate"
         initial="initial"
@@ -95,7 +95,7 @@ function HomePage() {
           const Icon = item.icon;
 
           return (
-            <m.div variants={iconItemVariants}>
+            <m.div variants={iconItemVariants} key={item.id}>
               <Link
                 to={item.href}
                 key={item.id}
