@@ -98,7 +98,7 @@ body {
   }
 
   .social-icon {
-    @apply h-7 w-7 transition md:h-10 md:w-10;
+    @apply h-6 w-6 transition md:h-10 md:w-10;
   }
 
   .social-icon:hover path {
